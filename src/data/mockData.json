@@ -1,0 +1,226 @@
+{
+    "services": [
+        {
+            "id": "s1",
+            "slug": "crop-advice",
+            "title": "Crop Advice",
+            "subtitle": "Identify, Prevent, and Control Crop Diseases Early",
+            "description": "AI-powered disease detection and treatment recommendations for healthier crops.",
+            "detailedDescription": "Crop disease management is a critical part of successful farming. Kissan Sampurna's Crop Disease Advice service uses AI-powered image analysis to detect crop diseases at an early stage and provide accurate, actionable recommendations to farmers.\n\nBy simply uploading an image of the affected crop, farmers receive instant insights about the disease, its severity, affected plant parts, and recommended treatment methods. This helps reduce crop loss, avoid unnecessary pesticide usage, and improve overall farm productivity.\n\nOur system combines computer vision, agricultural expertise, and real field data to ensure reliable disease identification and timely intervention.",
+            "icon": "Sprout",
+            "howItWorks": [
+                {
+                    "title": "Image-Based Disease Detection",
+                    "description": "Upload a photo of the affected crop, and AI analyzes visible symptoms such as spots, lesions, discoloration, and damage patterns"
+                },
+                {
+                    "title": "Disease Identification & Severity Assessment",
+                    "description": "Identifies the disease type (fungal, bacterial, viral, or pest-related) and classifies the infection level (low, medium, or high)"
+                },
+                {
+                    "title": "Cause & Spread Analysis",
+                    "description": "Provides information on the pathogen responsible, how the disease spreads, and environmental conditions that favor its growth"
+                },
+                {
+                    "title": "Targeted Treatment Recommendations",
+                    "description": "Offers organic, preventive, and chemical control measures tailored to the specific crop and disease"
+                },
+                {
+                    "title": "Affected Area Visualization",
+                    "description": "Highlights infected regions on the crop image to help farmers clearly understand the extent of damage"
+                }
+            ],
+            "benefits": [
+                "Early detection to prevent large-scale crop damage",
+                "Reduced input costs through targeted treatment",
+                "Improved crop health and yield protection",
+                "Better decision-making using expert-backed insights",
+                "Support for sustainable and eco-friendly farming practices"
+            ]
+        },
+        {
+            "id": "s2",
+            "slug": "crop-disease",
+            "title": "Crop Disease",
+            "subtitle": "AI-Powered Crop Disease Detection & Management",
+            "description": "Detect crop diseases early using image-based AI analysis and receive reliable treatment guidance.",
+            "detailedDescription": "Crop diseases can severely impact yield and farm income if not identified at the right time. Kissan Sampurna's Crop Disease service enables farmers to detect crop diseases early using image-based AI analysis and receive reliable treatment guidance instantly.\n\nBy uploading an image of the affected crop, farmers get accurate disease identification along with severity level, affected plant parts, and recommended control measures. This helps in taking timely action, reducing crop loss, and improving overall crop health.\n\nOur system combines artificial intelligence, plant pathology knowledge, and real-world agricultural data to deliver precise and farmer-friendly disease insights.",
+            "icon": "Activity",
+            "howItWorks": [
+                {
+                    "title": "Crop Image Upload",
+                    "description": "Farmers capture or upload an image of the diseased crop directly through the platform"
+                },
+                {
+                    "title": "AI-Based Disease Detection",
+                    "description": "The system analyzes visual symptoms such as leaf spots, lesions, discoloration, and damage patterns to identify the disease"
+                },
+                {
+                    "title": "Disease Type & Severity Analysis",
+                    "description": "Identifies the pathogen category (fungal, bacterial, viral, or pest-related) and assesses the infection level"
+                },
+                {
+                    "title": "Cause & Spread Information",
+                    "description": "Explains the causes of the disease, how it spreads, and environmental conditions that increase risk"
+                },
+                {
+                    "title": "Treatment & Management Guidance",
+                    "description": "Provides organic, chemical, and preventive control measures specific to the detected disease"
+                },
+                {
+                    "title": "Affected Area Visualization",
+                    "description": "Highlights infected regions on the crop image to clearly show the extent of damage"
+                }
+            ],
+            "benefits": [
+                "Early disease detection to prevent yield loss",
+                "Targeted treatment reduces excess pesticide use",
+                "Better crop protection and farm productivity",
+                "Scientific, expert-backed disease recommendations",
+                "Supports sustainable and eco-friendly farming practices"
+            ]
+        },
+        {
+            "id": "s4",
+            "slug": "smart-farming",
+            "title": "Smart Farming",
+            "subtitle": "Next-Gen Data-Driven Farming Solutions",
+            "description": "End-to-end farm management using AI and IoT.",
+            "detailedDescription": "Experience the future of agriculture with our Smart Farming solutions. We integrate satellite imagery, IoT sensors, and machine learning to give you a 360-degree view of your farm's health and productivity.",
+            "icon": "Headset",
+            "howItWorks": [
+                {
+                    "title": "Satellite Monitoring",
+                    "description": "Continuous NDVI and health monitoring of your crops"
+                },
+                {
+                    "title": "IoT Sensors",
+                    "description": "Real-time data from soil and plant sensors (optional)"
+                },
+                {
+                    "title": "AI Diagnostics",
+                    "description": "Automated detection of stress and anomalies in crop growth"
+                },
+                {
+                    "title": "Centralized Dashboard",
+                    "description": "Manage all your farm data in one easy-to-use interface"
+                }
+            ],
+            "benefits": [
+                "Complete visibility into farm performance from anywhere",
+                "Early detection of crop stress before it's visible to the eye",
+                "Data-backed decisions for every stage of the crop cycle",
+                "Maximize ROI through precision agriculture techniques"
+            ]
+        },
+        {
+            "id": "s5",
+            "slug": "mandi-prices",
+            "title": "Mandi Prices",
+            "subtitle": "Real-Time Market Prices for Smarter Selling Decisions",
+            "description": "Access real-time and historical agricultural market prices across various mandis.",
+            "detailedDescription": "Accessing accurate and timely mandi price information is essential for maximizing farm income. Kissan Sampurna's Mandi Prices service provides real-time and historical agricultural market prices across various mandis, helping farmers make informed decisions on when and where to sell their produce.\n\nBy aggregating verified data from official market sources, this service ensures transparency and reliability. Farmers can track price trends, compare rates across mandis, and plan harvest and sales strategies more effectively.\n\nOur data-driven approach empowers farmers to reduce middlemen dependency, avoid distress sales, and improve profitability.",
+            "icon": "TrendingUp",
+            "howItWorks": [
+                {
+                    "title": "Real-Time Price Updates",
+                    "description": "Provides the latest commodity prices directly from registered mandis and official data sources"
+                },
+                {
+                    "title": "Commodity & Mandi Selection",
+                    "description": "Farmers can search prices based on crop type, mandi location, and date"
+                },
+                {
+                    "title": "Price Trend Analysis",
+                    "description": "Shows historical price trends to help farmers understand market behavior and seasonal patterns"
+                },
+                {
+                    "title": "Market Comparison",
+                    "description": "Enables comparison of prices across multiple mandis to identify the best selling opportunities"
+                },
+                {
+                    "title": "Verified Government Data",
+                    "description": "Prices are sourced from trusted government platforms to ensure accuracy and credibility"
+                }
+            ],
+            "benefits": [
+                "Better price realization for farm produce",
+                "Reduced risk of selling at low market rates",
+                "Improved planning of harvest and storage",
+                "Transparency in agricultural market prices",
+                "Increased bargaining power for farmers"
+            ]
+        }
+    ],
+    "pricing": [
+        {
+            "name": "Free",
+            "price": 0,
+            "features": [
+                "Basic Soil Report",
+                "Monthly Satellite View",
+                "Community Access"
+            ]
+        },
+        {
+            "name": "Basic",
+            "price": 499,
+            "features": [
+                "Weekly Satellite View",
+                "Smart Alerts",
+                "Basic Crop Selection",
+                "Email Support"
+            ]
+        }
+    ],
+    "blogs": [
+        {
+            "id": 1,
+            "slug": "soil-ph-crop-yield-guide",
+            "title": "Soil pH & Crop Yield: Complete Guide for Indian Farmers",
+            "excerpt": "Learn how soil pH affects nutrient availability and crop growth. Discover the optimal pH ranges for different crops and how to adjust your soil pH for better yields.",
+            "date": "2026-01-28",
+            "author": "Kissan Sampurna",
+            "category": "Soil Health",
+            "tags": [
+                "Soil pH",
+                "Crop Yield",
+                "Farming Tips"
+            ],
+            "image": "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&auto=format&fit=crop",
+            "content": "## Understanding Soil pH\n\nSoil pH is one of the most important factors affecting crop growth and yield. It measures how acidic or alkaline your soil is on a scale of 0 to 14, with 7 being neutral.\n\nMost crops prefer a slightly acidic to neutral pH range of 6.0 to 7.0. When pH levels are outside this range, nutrients become less available to plants, even if they're present in the soil.\n\n## Why pH Matters for Your Crops\n\nSoil pH affects nutrient availability in significant ways:\n\n- Nitrogen, phosphorus, and potassium are most available at pH 6.0-7.0\n- Iron, manganese, and zinc become less available in alkaline soils\n- Calcium and magnesium are reduced in acidic soils\n\n## Optimal pH Ranges for Common Indian Crops\n\n- Rice: 5.5 - 6.5\n- Wheat: 6.0 - 7.0\n- Cotton: 6.0 - 7.5\n- Sugarcane: 6.0 - 7.5\n- Pulses: 6.0 - 7.0\n- Vegetables: 6.0 - 7.0\n\n## How to Test Your Soil pH\n\nKissan Sampurna provides comprehensive soil testing services that include pH analysis along with nutrient profiling. Our app makes it easy to understand your results and get actionable recommendations.\n\n## Adjusting Soil pH\n\nTo raise pH (make soil less acidic):\n- Apply agricultural lime (calcium carbonate)\n- Use dolomite lime for magnesium-deficient soils\n\nTo lower pH (make soil less alkaline):\n- Add sulfur or iron sulfate\n- Use organic matter like compost\n\n## Conclusion\n\nRegular soil testing and pH management are essential for maximizing crop yields. With Kissan Sampurna's soil analysis services, you can ensure your soil is always in optimal condition for your crops."
+        },
+        {
+            "id": 2,
+            "slug": "water-management-sustainable-farming",
+            "title": "Water Management Strategies for Sustainable Farming",
+            "excerpt": "Explore effective irrigation techniques and water conservation methods that help farmers optimize water usage while maintaining healthy crop growth.",
+            "date": "2026-01-25",
+            "author": "Kissan Sampurna",
+            "category": "Irrigation",
+            "tags": [
+                "Water Management",
+                "Sustainable Farming",
+                "Irrigation"
+            ],
+            "image": "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&auto=format&fit=crop",
+            "content": "## The Importance of Water Management\n\nWater is the lifeblood of agriculture. With increasing water scarcity and unpredictable rainfall patterns, efficient water management has become crucial for sustainable farming.\n\n## Modern Irrigation Techniques\n\n## Drip Irrigation\n\nDrip irrigation delivers water directly to the root zone, reducing water wastage by up to 60%. Benefits include:\n- Precise water delivery to each plant\n- Reduced weed growth between rows\n- Lower disease pressure from wet foliage\n- Ability to fertigate (apply fertilizers through irrigation)\n\n## Sprinkler Systems\n\nSprinkler irrigation mimics rainfall and is ideal for:\n- Large field crops\n- Uneven terrain\n- Sandy soils with low water retention\n\n## Water Conservation Strategies\n\n## Mulching\n\nCovering soil with organic or plastic mulch reduces evaporation by 25-50%. This simple technique helps retain soil moisture and suppresses weeds.\n\n## Rainwater Harvesting\n\nCollecting and storing rainwater during monsoons provides a valuable water reserve for dry periods. Farm ponds and check dams are effective solutions.\n\n## Soil Moisture Monitoring\n\nKissan Sampurna's satellite-based soil moisture monitoring helps you:\n- Track moisture levels across your farm\n- Identify dry spots that need attention\n- Schedule irrigation based on actual crop needs\n\n## Smart Irrigation Scheduling\n Our app provides weather-based irrigation recommendations that consider:\n\n- Current soil moisture levels\n- Weather forecasts\n- Crop water requirements\n- Growth stage\n\n## Conclusion\n\nEfficient water management is essential for profitable and sustainable farming. With the right techniques and technology, you can reduce water usage while improving crop yields."
+        },
+        {
+            "id": 3,
+            "slug": "smart-farming-ai-agriculture",
+            "title": "Smart Farming with AI: The Future of Agriculture",
+            "excerpt": "Discover how artificial intelligence and satellite technology are revolutionizing farming practices across India. Learn about precision agriculture techniques.",
+            "date": "2026-01-20",
+            "author": "Kissan Sampurna",
+            "category": "Technology",
+            "tags": [
+                "AI in Farming",
+                "Smart Agriculture",
+                "Technology"
+            ],
+            "image": "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=600&auto=format&fit=crop",
+            "content": "## The Age of Smart Farming\n\nAgriculture is undergoing a digital transformation. Artificial intelligence, satellite imagery, and IoT sensors are enabling farmers to make data-driven decisions like never before.\n\n## How AI is Changing Farming\n\n## Crop Health Monitoring\n\nAI-powered satellite analysis can detect crop stress weeks before it's visible to the human eye. This early warning system helps farmers:\n\n- Identify pest and disease outbreaks early\n- Detect nutrient deficiencies\n- Monitor crop growth patterns\n- Optimize harvest timing\n\n## Predictive Analytics\n\nMachine learning algorithms analyze historical data to predict:\n\n- Weather patterns and their impact on crops\n- Optimal planting and harvesting times\n- Market prices and demand trends\n- Pest and disease risk levels\n\n## Satellite Technology in Agriculture\n\nModern satellites provide detailed imagery that reveals:\n\n- NDVI (Normalized Difference Vegetation Index) for crop health\n- Soil moisture levels across large areas\n- Crop coverage and growth uniformity\n- Irrigation effectiveness\n\n## Kissan Sampurna's Smart Farming Features\n\nOur platform brings these advanced technologies to every farmer:\n\n- Weekly satellite health reports for your farm\n- AI-powered crop disease advice\n- Real-time weather alerts and forecasts\n- Personalized farming calendar\n- Expert support when you need it\n\n## Benefits for Indian Farmers\n\n- Reduce input costs by 15-25%\n- Increase yields by 10-20%\n- Save time with automated monitoring\n- Make informed decisions with reliable data\n\n## Getting Started\n\nDownload the Kissan Sampurna app to start your smart farming journey. Our technology is designed to be simple and accessible, regardless of your farm size or technical expertise.\n\n## Conclusion\n\nSmart farming is not just for large agricultural enterprises. With the right tools and support, every farmer can benefit from AI and satellite technology to improve their productivity and profitability."
+        }
+    ]
+}

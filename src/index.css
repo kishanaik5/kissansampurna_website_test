@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-green: #1F4D1A;
+  --color-accent-brown: #8B4513;
+  --color-bg-light: #F9FBFA;
+}
+
+@layer base {
+  html {
+    font-size: 18px;
+  }
+
+  body {
+    @apply antialiased text-gray-900 bg-[#F9FBFA];
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Custom animations */
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 8s linear infinite;
+  }
+}

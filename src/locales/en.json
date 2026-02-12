@@ -1,0 +1,584 @@
+{
+    "nav": {
+        "home": "Home",
+        "services": "Services",
+        "products": "Products",
+        "about": "About us",
+        "blogs": "Blogs",
+        "plans": "Plans",
+        "contact": "Contact us"
+    },
+    "hero": {
+        "tagline": "Progressive Farming",
+        "brand_first": "Kissan",
+        "brand_second": "Sampurna",
+        "description_1": "A new era of progressive farming. Empowering farmers with next-gen satellite data, IoT insights, and sustainable practices.",
+        "description_2": "Join thousands of farmers who are transforming their agricultural practices with our AI-powered platform. Get personalized recommendations, real-time alerts, and comprehensive farm analytics.",
+        "btn_more": "See More",
+        "btn_learn": "Learn More"
+    },
+    "stages": {
+        "seed_sowing": {
+            "title": "Seed Sowing",
+            "desc": "Smart seed selection based on soil analysis"
+        },
+        "planting": {
+            "title": "Planting",
+            "desc": "Optimal spacing & irrigation planning"
+        },
+        "growth": {
+            "title": "Growth",
+            "desc": "AI-powered health monitoring"
+        },
+        "harvest": {
+            "title": "Harvest",
+            "desc": "Best time prediction for max yield"
+        }
+    },
+    "promotion": {
+        "title_part1": "Get Smart Farming in",
+        "title_part2": "Your Pocket",
+        "description": "Download the Kissan Sampurna app and access all our smart farming features anytime, anywhere. Get real-time weather alerts and crop recommendations.",
+        "features": {
+            "weather": "Real-time weather forecasts",
+            "advice": "AI-powered crop advice",
+            "guidance": "Soil analysis guidance",
+            "tools": "Farm management tools"
+        },
+        "btn_google": "Google Play",
+        "btn_apple": "App Store",
+        "get_it_on": "Get it on",
+        "coming_soon": "Coming Soon"
+    },
+    "footer": {
+        "tagline": "We help you find your dream Harvest.",
+        "sections": {
+            "information": "Information",
+            "company": "Company",
+            "reviews": "Reviews",
+            "products": "Products"
+        },
+        "links": {
+            "terms": "Terms & Conditions",
+            "privacy": "Privacy Policy",
+            "feedback": "Feedback",
+            "plans": "Subscription Plans",
+            "about": "About Us",
+            "contact": "Contact Us",
+            "user_reviews": "User Reviews",
+            "why_buy": "Why Buy Our Products?"
+        },
+        "company_name": "ALTQUBE PLATFORM ENTERPRISE PRIVATE LIMITED",
+        "rights": "All rights reserved.",
+        "legal_notice": "Kissan Sampurna is a product of ALTQUBE Platform Enterprise Private Limited."
+    },
+    "phone_mockup": {
+        "welcome": "Welcome to",
+        "label": "Phone number",
+        "placeholder": "Enter your Phone number",
+        "btn_next": "Next"
+    },
+    "products": {
+        "title": "Products",
+        "subtitle": "Innovative agricultural solutions designed for the modern farmer.",
+        "coming_soon": "Coming Soon",
+        "coming_soon_desc": "Our product add-ons are coming soon",
+        "innovation_tag": "Kissan Sampurna • Innovation for Farmers",
+        "why_buy": "Why Buy Our Products?",
+        "ecosystem_desc": "We don't just sell products; we provide a complete growth ecosystem for your farm's success.",
+        "reasons": {
+            "curated": {
+                "title": "Expertly Curated",
+                "desc": "Every product is selected by agricultural experts to ensure maximum yield potential."
+            },
+            "tested": {
+                "title": "Quality Tested",
+                "desc": "Rigorous quality checks performed on all seeds, fertilizers, and tools."
+            },
+            "sustainable": {
+                "title": "Sustainable Growth",
+                "desc": "Focused on eco-friendly solutions that protect your soil and the environment."
+            },
+            "data": {
+                "title": "Data-Backed",
+                "desc": "Proprietary analysis ensures products are matched to your specific soil and climate."
+            }
+        }
+    },
+    "contact": {
+        "title": "Get in Touch",
+        "subtitle": "Have questions? We're here to help you revolutionize your farming practices.",
+        "form": {
+            "name": "Full Name",
+            "email": "Email Address",
+            "subject": "Subject",
+            "message": "Message",
+            "placeholder_name": "John Doe",
+            "placeholder_email": "john@example.com",
+            "placeholder_subject": "How can we help?",
+            "placeholder_message": "Tell us more about your inquiry...",
+            "btn_send": "Send Message"
+        },
+        "info": {
+            "title": "Contact Information",
+            "description": "Connect with us through any of these channels or fill out the form, and we'll get back to you within 24 hours.",
+            "email_label": "Email Us",
+            "phone_label": "Call Us",
+            "address_label": "Visit Us"
+        }
+    },
+    "about": {
+        "hero": {
+            "title_part1": "Empowering Farmers with Smart,",
+            "title_part2": "Data-Driven Agriculture",
+            "description_1": "Kissan Sampurna is a technology-driven agriculture platform designed to help farmers make better crop decisions, improve farm productivity, and reduce losses using satellite data, soil insights, and real-time weather intelligence.",
+            "description_2": "We combine advanced agri-science with simple, easy-to-understand insights, so every farmer can grow smarter and more sustainably."
+        },
+        "vision": {
+            "title": "Our Vision",
+            "desc": "To revolutionize agriculture by empowering every farmer with access to cutting-edge technology and data-driven insights, making sustainable farming profitable and accessible to all."
+        },
+        "mission": {
+            "title": "Our Mission",
+            "desc": "To provide farmers with real-time, actionable insights on crop selection, soil health, weather patterns, and farm management—enabling them to make smarter decisions and maximize yields sustainably."
+        },
+        "values": {
+            "title": "Our Core Values",
+            "sustainability": {
+                "title": "Sustainability",
+                "desc": "We promote environmentally-friendly farming practices that protect soil health and preserve natural resources for future generations."
+            },
+            "farmer_centric": {
+                "title": "Farmer-Centric",
+                "desc": "Every solution we build is designed with farmers' needs in mind, ensuring accessibility, simplicity, and genuine impact on their livelihoods."
+            },
+            "data_driven": {
+                "title": "Data-Driven",
+                "desc": "We leverage advanced technology, satellite imagery, and scientific insights to provide accurate, reliable recommendations farmers can trust."
+            }
+        }
+    },
+    "pricing": {
+        "title": "Simple, Transparent Pricing Plan",
+        "subtitle": "Choose the plan that fits your farm's needs. No hidden fees.",
+        "monthly": "Monthly",
+        "yearly": "Yearly",
+        "save_tag": "Save 20%",
+        "most_popular": "Most Popular",
+        "year": "year",
+        "month": "month",
+        "cta": "Get the App",
+        "info_box": "All plans include access to our basic community forum and monthly newsletter. Pricing is inclusive of all taxes. For bulk orders or NGO partnerships, please contact our support team.",
+        "success_msg": "Success! You have subscribed to the",
+        "plans": {
+            "free": {
+                "name": "Free",
+                "features": {
+                    "0": "Basic Soil Report",
+                    "1": "Monthly Satellite View",
+                    "2": "Community Access"
+                }
+            },
+            "basic": {
+                "name": "Basic",
+                "features": {
+                    "0": "Weekly Satellite View",
+                    "1": "Smart Alerts",
+                    "2": "Basic Crop Selection",
+                    "3": "Email Support"
+                }
+            }
+        }
+    },
+    "blogs": {
+        "title": "Articles & Insights",
+        "subtitle": "Expert farming tips, agricultural insights, and the latest updates from Kissan Sampurna.",
+        "author_prefix": "By",
+        "read_more": "Read More",
+        "reviews": {
+            "title_part1": "User",
+            "title_part2": "Reviews",
+            "subtitle": "Share your experience with Kissan Sampurna"
+        },
+        "review_form": {
+            "email_subject": "User Review from",
+            "thanks_title": "Thank You!",
+            "thanks_msg": "Your review has been submitted successfully.",
+            "thanks_btn": "Thank You for your review.",
+            "label_name": "Your Name",
+            "placeholder_name": "Enter your name",
+            "label_review": "Your Review",
+            "placeholder_review": "Share your experience with Kissan Sampurna...",
+            "btn_submit": "Submit Review"
+        },
+        "articles": {
+            "id_1": {
+                "title": "Soil pH & Crop Yield: Complete Guide for Indian Farmers",
+                "excerpt": "Learn how soil pH affects nutrient availability and crop growth. Discover the optimal pH ranges for different crops and how to adjust your soil pH for better yields.",
+                "category": "Soil Health",
+                "author": "Kissan Sampurna",
+                "content": "## Understanding Soil pH\n\nSoil pH is one of the most important factors affecting crop growth and yield. It measures how acidic or alkaline your soil is on a scale of 0 to 14, with 7 being neutral.\n\nMost crops prefer a slightly acidic to neutral pH range of 6.0 to 7.0. When pH levels are outside this range, nutrients become less available to plants, even if they're present in the soil.\n\n## Why pH Matters for Your Crops\n\nSoil pH affects nutrient availability in significant ways:\n\n- Nitrogen, phosphorus, and potassium are most available at pH 6.0-7.0\n- Iron, manganese, and zinc become less available in alkaline soils\n- Calcium and magnesium are reduced in acidic soils\n\n## Optimal pH Ranges for Common Indian Crops\n\n- Rice: 5.5 - 6.5\n- Wheat: 6.0 - 7.0\n- Cotton: 6.0 - 7.5\n- Sugarcane: 6.0 - 7.5\n- Pulses: 6.0 - 7.0\n- Vegetables: 6.0 - 7.0\n\n## How to Test Your Soil pH\n\nKissan Sampurna provides comprehensive soil testing services that include pH analysis along with nutrient profiling. Our app makes it easy to understand your results and get actionable recommendations.\n\n## Adjusting Soil pH\n\nTo raise pH (make soil less acidic):\n- Apply agricultural lime (calcium carbonate)\n- Use dolomite lime for magnesium-deficient soils\n\nTo lower pH (make soil less alkaline):\n- Add sulfur or iron sulfate\n- Use organic matter like compost\n\n## Conclusion\n\nRegular soil testing and pH management are essential for maximizing crop yields. With Kissan Sampurna's soil analysis services, you can ensure your soil is always in optimal condition for your crops."
+            },
+            "id_2": {
+                "title": "Water Management Strategies for Sustainable Farming",
+                "excerpt": "Explore effective irrigation techniques and water conservation methods that help farmers optimize water usage while maintaining healthy crop growth.",
+                "category": "Irrigation",
+                "author": "Kissan Sampurna",
+                "content": "## The Importance of Water Management\n\nWater is the lifeblood of agriculture. With increasing water scarcity and unpredictable rainfall patterns, efficient water management has become crucial for sustainable farming.\n\n## Modern Irrigation Techniques\n\n## Drip Irrigation\n\nDrip irrigation delivers water directly to the root zone, reducing water wastage by up to 60%. Benefits include:\n- Precise water delivery to each plant\n- Reduced weed growth between rows\n- Lower disease pressure from wet foliage\n- Ability to fertigate (apply fertilizers through irrigation)\n\n## Sprinkler Systems\n\nSprinkler irrigation mimics rainfall and is ideal for:\n- Large field crops\n- Uneven terrain\n- Sandy soils with low water retention\n\n## Water Conservation Strategies\n\n## Mulching\n\nCovering soil with organic or plastic mulch reduces evaporation by 25-50%. This simple technique helps retain soil moisture and suppresses weeds.\n\n## Rainwater Harvesting\n\nCollecting and storing rainwater during monsoons provides a valuable water reserve for dry periods. Farm ponds and check dams are effective solutions.\n\n## Soil Moisture Monitoring\n\nKissan Sampurna's satellite-based soil moisture monitoring helps you:\n- Track moisture levels across your farm\n- Identify dry spots that need attention\n- Schedule irrigation based on actual crop needs\n\n## Smart Irrigation Scheduling\n Our app provides weather-based irrigation recommendations that consider:\n\n- Current soil moisture levels\n- Weather forecasts\n- Crop water requirements\n- Growth stage\n\n## Conclusion\n\nEfficient water management is essential for profitable and sustainable farming. With the right techniques and technology, you can reduce water usage while improving crop yields."
+            },
+            "id_3": {
+                "title": "Smart Farming with AI: The Future of Agriculture",
+                "excerpt": "Discover how artificial intelligence and satellite technology are revolutionizing farming practices across India. Learn about precision agriculture techniques.",
+                "category": "Technology",
+                "tags": {
+                    "0": "AI in Farming",
+                    "1": "Smart Agriculture"
+                },
+                "author": "Kissan Sampurna",
+                "content": "## The Age of Smart Farming\n\nAgriculture is undergoing a digital transformation. Artificial intelligence, satellite imagery, and IoT sensors are enabling farmers to make data-driven decisions like never before.\n\n## How AI is Changing Farming\n\n## Crop Health Monitoring\n\nAI-powered satellite analysis can detect crop stress weeks before it's visible to the human eye. This early warning system helps farmers:\n\n- Identify pest and disease outbreaks early\n- Detect nutrient deficiencies\n- Monitor crop growth patterns\n- Optimize harvest timing\n\n## Predictive Analytics\n\nMachine learning algorithms analyze historical data to predict:\n\n- Weather patterns and their impact on crops\n- Optimal planting and harvesting times\n- Market prices and demand trends\n- Pest and disease risk levels\n\n## Satellite Technology in Agriculture\n\nModern satellites provide detailed imagery that reveals:\n\n- NDVI (Normalized Difference Vegetation Index) for crop health\n- Soil moisture levels across large areas\n- Crop coverage and growth uniformity\n- Irrigation effectiveness\n\n## Kissan Sampurna's Smart Farming Features\n\nOur platform brings these advanced technologies to every farmer:\n\n- Weekly satellite health reports for your farm\n- AI-powered crop disease advice\n- Real-time weather alerts and forecasts\n- Personalized farming calendar\n- Expert support when you need it\n\n## Benefits for Indian Farmers\n\n- Reduce input costs by 15-25%\n- Increase yields by 10-20%\n- Save time with automated monitoring\n- Make informed decisions with reliable data\n\n## Getting Started\n\nDownload the Kissan Sampurna app to start your smart farming journey. Our technology is designed to be simple and accessible, regardless of your farm size or technical expertise.\n\n## Conclusion\n\nSmart farming is not just for large agricultural enterprises. With the right tools and support, every farmer can benefit from AI and satellite technology to improve their productivity and profitability."
+            }
+        }
+    },
+    "services": {
+        "title": "Our Services",
+        "subtitle": "We offer specialized solutions tailored to the needs of modern agriculture. Harness the power of data and technology to optimize your farm's performance.",
+        "learn_more": "Learn more details",
+        "not_found": "Service not found",
+        "back_to": "Back to Services",
+        "services_suffix": "Services",
+        "how_it_works": "How Our {{title}} Works",
+        "benefits_title": "Benefits of Smart {{title}}",
+        "cta_interest": "Interested in {{title}}?",
+        "cta_description": "Contact our experts to learn more about how we can help you optimize your yields.",
+        "cta_btn": "Contact Sales",
+        "app_view": "Kissan Sampurna App View",
+        "cta": {
+            "title": "Ready to modernize your farm?",
+            "subtitle": "Join 1000+ farmers already using Kissan Sampurna to improve their yields.",
+            "android_btn": "For Android",
+            "ios_btn": "iOS App"
+        },
+        "items": {
+            "s1": {
+                "title": "Crop Advice",
+                "subtitle": "Identify, Prevent, and Control Crop Diseases Early",
+                "description": "AI-powered disease detection and treatment recommendations for healthier crops.",
+                "detailedDescription": "Crop disease management is a critical part of successful farming. Kissan Sampurna's Crop Disease Advice service uses AI-powered image analysis to detect crop diseases at an early stage and provide accurate, actionable recommendations to farmers.\n\nBy simply uploading an image of the affected crop, farmers receive instant insights about the disease, its severity, affected plant parts, and recommended treatment methods. This helps reduce crop loss, avoid unnecessary pesticide usage, and improve overall farm productivity.\n\nOur system combines computer vision, agricultural expertise, and real field data to ensure reliable disease identification and timely intervention.",
+                "howItWorks": {
+                    "0": {
+                        "title": "Image-Based Disease Detection",
+                        "description": "Upload a photo of the affected crop, and AI analyzes visible symptoms such as spots, lesions, discoloration, and damage patterns"
+                    },
+                    "1": {
+                        "title": "Disease Identification & Severity Assessment",
+                        "description": "Identifies the disease type (fungal, bacterial, viral, or pest-related) and classifies the infection level (low, medium, or high)"
+                    },
+                    "2": {
+                        "title": "Cause & Spread Analysis",
+                        "description": "Provides information on the pathogen responsible, how the disease spreads, and environmental conditions that favor its growth"
+                    },
+                    "3": {
+                        "title": "Targeted Treatment Recommendations",
+                        "description": "Offers organic, preventive, and chemical control measures tailored to the specific crop and disease"
+                    },
+                    "4": {
+                        "title": "Affected Area Visualization",
+                        "description": "Highlights infected regions on the crop image to help farmers clearly understand the extent of damage"
+                    }
+                },
+                "benefits": {
+                    "0": "Early detection to prevent large-scale crop damage",
+                    "1": "Reduced input costs through targeted treatment",
+                    "2": "Improved crop health and yield protection",
+                    "3": "Better decision-making using expert-backed insights",
+                    "4": "Support for sustainable and eco-friendly farming practices"
+                }
+            },
+            "s2": {
+                "title": "Crop Disease",
+                "subtitle": "AI-Powered Crop Disease Detection & Management",
+                "description": "Detect crop diseases early using image-based AI analysis and receive reliable treatment guidance.",
+                "detailedDescription": "Crop diseases can severely impact yield and farm income if not identified at the right time. Kissan Sampurna's Crop Disease service enables farmers to detect crop diseases early using image-based AI analysis and receive reliable treatment guidance instantly.\n\nBy uploading an image of the affected crop, farmers get accurate disease identification along with severity level, affected plant parts, and recommended control measures. This helps in taking timely action, reducing crop loss, and improving overall crop health.\n\nOur system combines artificial intelligence, plant pathology knowledge, and real-world agricultural data to deliver precise and farmer-friendly disease insights.",
+                "howItWorks": {
+                    "0": {
+                        "title": "Crop Image Upload",
+                        "description": "Farmers capture or upload an image of the diseased crop directly through the platform"
+                    },
+                    "1": {
+                        "title": "AI-Based Disease Detection",
+                        "description": "The system analyzes visual symptoms such as leaf spots, lesions, discoloration, and damage patterns to identify the disease"
+                    },
+                    "2": {
+                        "title": "Disease Type & Severity Analysis",
+                        "description": "Identifies the pathogen category (fungal, bacterial, viral, or pest-related) and assesses the infection level"
+                    },
+                    "3": {
+                        "title": "Cause & Spread Information",
+                        "description": "Explains the causes of the disease, how it spreads, and environmental conditions that increase risk"
+                    },
+                    "4": {
+                        "title": "Treatment & Management Guidance",
+                        "description": "Provides organic, chemical, and preventive control measures specific to the detected disease"
+                    },
+                    "5": {
+                        "title": "Affected Area Visualization",
+                        "description": "Highlights infected regions on the crop image to clearly show the extent of damage"
+                    }
+                },
+                "benefits": {
+                    "0": "Early disease detection to prevent yield loss",
+                    "1": "Targeted treatment reduces excess pesticide use",
+                    "2": "Better crop protection and farm productivity",
+                    "3": "Scientific, expert-backed disease recommendations",
+                    "4": "Supports sustainable and eco-friendly farming practices"
+                }
+            },
+            "s4": {
+                "title": "Smart Farming",
+                "subtitle": "Next-Gen Data-Driven Farming Solutions",
+                "description": "End-to-end farm management using AI and IoT.",
+                "detailedDescription": "Experience the future of agriculture with our Smart Farming solutions. We integrate satellite imagery, IoT sensors, and machine learning to give you a 360-degree view of your farm's health and productivity.",
+                "howItWorks": {
+                    "0": {
+                        "title": "Satellite Monitoring",
+                        "description": "Continuous NDVI and health monitoring of your crops"
+                    },
+                    "1": {
+                        "title": "IoT Sensors",
+                        "description": "Real-time data from soil and plant sensors (optional)"
+                    },
+                    "2": {
+                        "title": "AI Diagnostics",
+                        "description": "Automated detection of stress and anomalies in crop growth"
+                    },
+                    "3": {
+                        "title": "Centralized Dashboard",
+                        "description": "Manage all your farm data in one easy-to-use interface"
+                    }
+                },
+                "benefits": {
+                    "0": "Complete visibility into farm performance from anywhere",
+                    "1": "Early detection of crop stress before it's visible to the eye",
+                    "2": "Data-backed decisions for every stage of the crop cycle",
+                    "3": "Maximize ROI through precision agriculture techniques"
+                }
+            },
+            "s5": {
+                "title": "Mandi Prices",
+                "subtitle": "Real-Time Market Prices for Smarter Selling Decisions",
+                "description": "Access real-time and historical agricultural market prices across various mandis.",
+                "detailedDescription": "Accessing accurate and timely mandi price information is essential for maximizing farm income. Kissan Sampurna's Mandi Prices service provides real-time and historical agricultural market prices across various mandis, helping farmers make informed decisions on when and where to sell their produce.\n\nBy aggregating verified data from official market sources, this service ensures transparency and reliability. Farmers can track price trends, compare rates across mandis, and plan harvest and sales strategies more effectively.\n\nOur data-driven approach empowers farmers to reduce middlemen dependency, avoid distress sales, and improve profitability.",
+                "howItWorks": {
+                    "0": {
+                        "title": "Real-Time Price Updates",
+                        "description": "Provides the latest commodity prices directly from registered mandis and official data sources"
+                    },
+                    "1": {
+                        "title": "Commodity & Mandi Selection",
+                        "description": "Farmers can search prices based on crop type, mandi location, and date"
+                    },
+                    "2": {
+                        "title": "Price Trend Analysis",
+                        "description": "Shows historical price trends to help farmers understand market behavior and seasonal patterns"
+                    },
+                    "3": {
+                        "title": "Market Comparison",
+                        "description": "Enables comparison of prices across multiple mandis to identify the best selling opportunities"
+                    },
+                    "4": {
+                        "title": "Verified Government Data",
+                        "description": "Prices are sourced from trusted government platforms to ensure accuracy and credibility"
+                    }
+                },
+                "benefits": {
+                    "0": "Better price realization for farm produce",
+                    "1": "Reduced risk of selling at low market rates",
+                    "2": "Improved planning of harvest and storage",
+                    "3": "Transparency in agricultural market prices",
+                    "4": "Increased bargaining power for farmers"
+                }
+            }
+        }
+    },
+    "blog_detail": {
+        "not_found": "Blog not found",
+        "back_to_blogs": "Back to blogs",
+        "back_to_all": "Back to all articles",
+        "by": "By"
+    },
+    "auth": {
+        "login": {
+            "title": "Welcome Back",
+            "subtitle": "Sign in to access your farm dashboard",
+            "phone_label": "Phone Number",
+            "phone_placeholder": "Enter your phone number",
+            "email_label": "Email Address",
+            "email_placeholder": "name@company.com",
+            "password_label": "Password",
+            "password_placeholder": "Enter your password",
+            "role_user": "Farmer / User",
+            "role_admin": "Admin Panel",
+            "admin_warning": "Admin access provides control over blog content and user subscriptions.",
+            "btn_login": "Login",
+            "no_account": "Don't have an account?",
+            "signup_link": "Sign up for free"
+        },
+        "signup": {
+            "title": "Create Account",
+            "subtitle": "Start your journey toward smarter farming today.",
+            "name_label": "Full Name",
+            "name_placeholder": "Farmer Name",
+            "email_label": "Email Address",
+            "email_placeholder": "name@email.com",
+            "phone_label": "Phone Number",
+            "phone_placeholder": "Enter your mobile number",
+            "password_label": "Password",
+            "password_placeholder": "Create a password",
+            "btn_signup": "Create Account",
+            "has_account": "Already have an account?",
+            "login_link": "Login here"
+        }
+    },
+    "legal": {
+        "privacy": {
+            "title": "Privacy Policy",
+            "intro_italic": "This Privacy Policy is issued by ALTQUBE PLATFORM ENTERPRISE PRIVATE LIMITED (\"Company\", \"we\", \"us\", or \"our\"), the owner and operator of the Kissan Sampurna application and technical services.",
+            "intro_bold": "Kissan Sampurna respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you use our app.",
+            "sections": {
+                "collection": {
+                    "title": "Information We Collect",
+                    "p1": "We may collect the following information:",
+                    "items": {
+                        "0": "Personal details such as name, mobile number, email address",
+                        "1": "Farm-related details such as location, crop type, soil information, and land size",
+                        "2": "App usage data for improving services",
+                        "3": "Payment information (processed securely through third-party payment gateways)"
+                    }
+                },
+                "usage": {
+                    "title": "How We Use Your Information",
+                    "items": {
+                        "0": "Provide personalized crop advice and farm reports",
+                        "1": "Improve app features and user experience",
+                        "2": "Communicate updates, alerts, and support messages",
+                        "3": "Process payments and subscriptions",
+                        "4": "Ensure security and prevent misuse"
+                    }
+                },
+                "sharing": {
+                    "title": "Data Sharing",
+                    "items": {
+                        "0": "We do not sell or rent your personal data to third parties.",
+                        "1": "Data may be shared with trusted partners only to deliver services (e.g., satellite data, weather, payment gateways).",
+                        "2": "Data may be shared if required by law or government authorities."
+                    }
+                },
+                "security": {
+                    "title": "Data Security",
+                    "p1": "We use reasonable security measures to protect your data from unauthorized access, loss, or misuse. However, no digital system is 100% secure."
+                },
+                "rights": {
+                    "title": "User Rights",
+                    "items": {
+                        "0": "You can request to access, correct, or delete your data.",
+                        "1": "You can withdraw consent for non-essential communications."
+                    }
+                },
+                "update": {
+                    "title": "Policy Update",
+                    "p1": "This Privacy Policy may be updated from time to time. Continued use of the app indicates acceptance of the updated policy."
+                }
+            }
+        },
+        "terms": {
+            "title": "Terms & Conditions",
+            "intro": "By downloading, accessing, or using the Kissan Sampurna app, you agree to comply with the following terms and conditions.",
+            "sections": {
+                "use": {
+                    "title": "Use of the App",
+                    "items": {
+                        "0": "The app provides agricultural information, farm insights, and related services for farmers.",
+                        "1": "All information is for guidance purposes only and does not guarantee specific results.",
+                        "2": "Users are responsible for decisions taken based on the app's information."
+                    }
+                },
+                "responsibilities": {
+                    "title": "User Responsibilities",
+                    "items": {
+                        "0": "You agree to provide accurate and complete information.",
+                        "1": "You must not misuse the app or attempt unauthorized access.",
+                        "2": "Violation of terms may lead to suspension or termination of access."
+                    }
+                },
+                "intellectual": {
+                    "title": "Intellectual Property",
+                    "items": {
+                        "0": "All content, data, logos, and features belong to Kissan Sampurna.",
+                        "1": "Reproduction or distribution without permission is prohibited."
+                    }
+                },
+                "liability": {
+                    "title": "Limitation of Liability",
+                    "items": {
+                        "0": "Kissan Sampurna is not responsible for crop loss, financial loss, or indirect damages.",
+                        "1": "External data sources (weather, satellite, advisory services) are used on a best-effort basis."
+                    }
+                }
+            },
+            "footer": "We reserve the right to modify these terms at any time. Continued usage implies acceptance of updated terms."
+        },
+        "refunds": {
+            "title": "Refunds & Cancellations Policy",
+            "intro": "Kissan Sampurna may offer paid features such as premium reports, subscriptions, or farm analysis services.",
+            "sections": {
+                "refund": {
+                    "title": "Refund Policy",
+                    "p1": "Payments made for services are non-refundable once the service is activated. Refunds will be considered only if:",
+                    "items": {
+                        "0": "Payment is deducted but service is not activated",
+                        "1": "There is a technical error from our side"
+                    }
+                },
+                "cancellation": {
+                    "title": "Cancellation Policy",
+                    "items": {
+                        "0": "Subscriptions must be cancelled before the next billing cycle.",
+                        "1": "No partial or unused-period refunds will be provided."
+                    }
+                },
+                "processing": {
+                    "title": "Refund Processing",
+                    "p1": "Approved refunds will be processed within 7-10 working days to the original payment method."
+                },
+                "contact_label": "Contact for Requests:"
+            }
+        },
+        "shipping": {
+            "title": "Shipping Policy",
+            "intro": "Kissan Sampurna is a digital service platform. We do not ship physical products.",
+            "sections": {
+                "delivery": {
+                    "title": "Digital Delivery",
+                    "items": {
+                        "0": "All services, reports, insights, and subscriptions are delivered digitally through the app.",
+                        "1": "Access to paid services is usually enabled immediately after successful payment.",
+                        "2": "In some cases, activation may take up to 5-10 minutes due to system processing."
+                    }
+                },
+                "delays": {
+                    "title": "Delays",
+                    "p1": "Temporary delays may occur due to technical issues, network problems, or third-party service downtime. If access is not enabled within a reasonable time, please contact our support team."
+                },
+                "no_physical": {
+                    "title": "No Physical Shipping",
+                    "items": {
+                        "0": "There is no physical delivery, courier, or logistics involved in our services.",
+                        "1": "Therefore, shipping charges and tracking are not applicable."
+                    }
+                },
+                "contact_label": "FOR ANY DELIVERY RELATED CONCERNS, CONTACT US AT:"
+            }
+        },
+        "contact_privacy": "FOR ANY PRIVACY RELATED CONCERNS, CONTACT US AT:"
+    }
+}
