@@ -14,8 +14,8 @@
         "brand_second": "Sampurna",
         "description_1": "A new era of progressive farming. Empowering farmers with next-gen satellite data, IoT insights, and sustainable practices.",
         "description_2": "Join thousands of farmers who are transforming their agricultural practices with our AI-powered platform. Get personalized recommendations, real-time alerts, and comprehensive farm analytics.",
-        "btn_more": "See More",
-        "btn_learn": "Learn More"
+        "btn_more": "Explore AI Farming Tools",
+        "btn_learn": "About Kissan Sampurna"
     },
     "stages": {
         "seed_sowing": {
@@ -161,40 +161,34 @@
     "pricing": {
         "title": "Simple, Transparent Pricing Plan",
         "subtitle": "Choose the plan that fits your farm's needs. No hidden fees.",
-        "monthly": "Monthly",
-        "yearly": "Yearly",
-        "save_tag": "Save 20%",
-        "most_popular": "Most Popular",
-        "year": "year",
-        "month": "month",
-        "cta": "Get the App",
-        "info_box": "All plans include access to our basic community forum and monthly newsletter. Pricing is inclusive of all taxes. For bulk orders or NGO partnerships, please contact our support team.",
-        "success_msg": "Success! You have subscribed to the",
-        "plans": {
-            "free": {
-                "name": "Free",
-                "features": {
-                    "0": "Basic Soil Report",
-                    "1": "Monthly Satellite View",
-                    "2": "Community Access"
-                }
-            },
-            "basic": {
-                "name": "Basic",
-                "features": {
-                    "0": "Weekly Satellite View",
-                    "1": "Smart Alerts",
-                    "2": "Basic Crop Selection",
-                    "3": "Email Support"
-                }
-            }
+        "gold_plan": "Gold Plan",
+        "per_year": "/ year",
+        "trial_badge": "7-DAY TRIAL AVAILABLE",
+        "trial_desc": "7-Day Free Trial Available",
+        "trial_charge_info": "₹1 will be charged for trial and refunded immediately",
+        "trial_refund_info": "₹1 was charged for trial and refunded immediately.",
+        "cta_get_app": "Get the App",
+        "limits_title": "Plan Limits",
+        "acre_limit": "acre_limit",
+        "scan_limit": "scan_limit",
+        "crop_advice_limit": "crop_advice_limit",
+        "report_limit": "report_limit",
+        "note_label": "Note",
+        "note_desc": "After Gold Plan limits were exhausted, customized plans would be provided according to user requirements.",
+        "trust": {
+            "refund_title": "Instant Refund Trial",
+            "refund_desc": "₹1 charged and refunded immediately",
+            "secure_title": "Secure Payment",
+            "secure_desc": "100% encrypted transactions",
+            "support_title": "Premium Support",
+            "support_desc": "24/7 dedicated assistance"
         }
     },
     "blogs": {
         "title": "Articles & Insights",
         "subtitle": "Expert farming tips, agricultural insights, and the latest updates from Kissan Sampurna.",
         "author_prefix": "By",
-        "read_more": "Read More",
+        "read_more": "Detect Crop Diseases",
         "reviews": {
             "title_part1": "User",
             "title_part2": "Reviews",
@@ -242,7 +236,7 @@
     "services": {
         "title": "Our Services",
         "subtitle": "We offer specialized solutions tailored to the needs of modern agriculture. Harness the power of data and technology to optimize your farm's performance.",
-        "learn_more": "Learn more details",
+        "learn_more": "View Service Details",
         "not_found": "Service not found",
         "back_to": "Back to Services",
         "services_suffix": "Services",
@@ -580,5 +574,18 @@
             }
         },
         "contact_privacy": "FOR ANY PRIVACY RELATED CONCERNS, CONTACT US AT:"
+    },
+    "alt": {
+        "logo": "Kissan Sampurna Logo - AI Powered Agriculture Platform",
+        "farmer_bg": "Indian farmer woman in a lush green agricultural field",
+        "hero_bg": "Wide view of a sustainable Indian farm during sunset",
+        "app_ui": "Kissan Sampurna mobile app interface showing farm health monitoring",
+        "blog_thumbnail": "Agricultural science and smart farming insights",
+        "mission_icon": "Sustainable agriculture vision and mission icon",
+        "value_sustainable": "Eco-friendly farming practices icon",
+        "value_farmer": "Farmer centric solutions icon",
+        "value_data": "Data driven agriculture insights icon",
+        "google_play": "Get Kissan Sampurna on Google Play Store",
+        "app_store": "Get Kissan Sampurna on Apple App Store"
     }
 }

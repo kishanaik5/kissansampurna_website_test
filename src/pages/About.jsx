@@ -32,26 +32,19 @@ const About = () => {
     return (
         <div className="bg-white min-h-screen">
             {/* Hero Section */}
-            <section className="relative h-[80vh] flex items-center pt-16">
+            <section className="relative min-h-[60vh] flex items-center pt-24 pb-12">
                 <div className="container mx-auto px-4 md:px-8">
-                    <div className="flex flex-col lg:flex-row items-center gap-12">
-                        <div className="lg:w-1/2">
-                            <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
-                                {t('about.hero.title_part1')} <span className="text-primary-green">{t('about.hero.title_part2')}</span>
-                            </h1>
-                            <p className="text-xl text-gray-600 leading-relaxed mb-8 font-medium">
+                    <div className="max-w-4xl mx-auto text-center">
+                        <h1 className="text-4xl md:text-7xl font-extrabold text-gray-900 mb-8 leading-tight">
+                            {t('about.hero.title_part1')} <span className="text-primary-green">{t('about.hero.title_part2')}</span>
+                        </h1>
+                        <div className="space-y-6">
+                            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-medium">
                                 {t('about.hero.description_1')}
                             </p>
-                            <p className="text-xl text-gray-600 leading-relaxed font-medium">
+                            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-medium">
                                 {t('about.hero.description_2')}
                             </p>
-                        </div>
-                        <div className="lg:w-1/2">
-                            <img
-                                src={farmersImg}
-                                alt="Indian farmers in field"
-                                className="rounded-[2rem] shadow-2xl transform transition-all duration-500 hover:scale-105"
-                            />
                         </div>
                     </div>
                 </div>

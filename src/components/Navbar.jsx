@@ -48,7 +48,7 @@ const Navbar = () => {
                         <div className="relative">
                             <img
                                 src={logo}
-                                alt="Kissan Sampurna Logo"
+                                alt={t('alt.logo')}
                                 className="h-10 w-10 group-hover:scale-110 transition-transform drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]"
                             />
                         </div>

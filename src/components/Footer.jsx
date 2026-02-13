@@ -14,7 +14,7 @@ const Footer = () => {
                 {/* Branding & Social */}
                 <div className="space-y-8 lg:col-span-1">
                     <div className="flex items-center justify-start space-x-2">
-                        <img src={logo} alt="Logo" className="h-8 w-8" />
+                        <img src={logo} alt={t('alt.logo')} className="h-8 w-8" />
                         <span className="text-xl font-bold tracking-tight text-gray-900">
                             {t('hero.brand_first')} <span className="text-primary-green">{t('hero.brand_second')}</span>
                         </span>
@@ -23,13 +23,13 @@ const Footer = () => {
                         {t('footer.tagline')}
                     </p>
                     <div className="flex justify-center md:justify-start space-x-6">
-                        <a href="https://www.facebook.com/kissan.sampurna/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white shadow-sm border border-gray-100 rounded-full flex items-center justify-center text-gray-400 hover:text-primary-green hover:shadow-md transition-all">
+                        <a href="https://www.facebook.com/kissan.sampurna/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white shadow-sm border border-gray-100 rounded-full flex items-center justify-center text-gray-400 hover:text-primary-green hover:shadow-md transition-all" aria-label="Follow Kissan Sampurna on Facebook">
                             <Facebook className="h-5 w-5" />
                         </a>
-                        <a href="https://x.com/kissansampurna" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white shadow-sm border border-gray-100 rounded-full flex items-center justify-center text-gray-400 hover:text-primary-green hover:shadow-md transition-all">
+                        <a href="https://x.com/kissansampurna" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white shadow-sm border border-gray-100 rounded-full flex items-center justify-center text-gray-400 hover:text-primary-green hover:shadow-md transition-all" aria-label="Follow Kissan Sampurna on Twitter">
                             <Twitter className="h-5 w-5" />
                         </a>
-                        <a href="https://www.instagram.com/kissansampurna" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white shadow-sm border border-gray-100 rounded-full flex items-center justify-center text-gray-400 hover:text-primary-green hover:shadow-md transition-all">
+                        <a href="https://www.instagram.com/kissansampurna" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white shadow-sm border border-gray-100 rounded-full flex items-center justify-center text-gray-400 hover:text-primary-green hover:shadow-md transition-all" aria-label="Follow Kissan Sampurna on Instagram">
                             <Instagram className="h-5 w-5" />
                         </a>
                     </div>

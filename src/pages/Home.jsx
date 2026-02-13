@@ -72,7 +72,7 @@ const Home = () => {
                 <div className="absolute inset-0 z-0">
                     <img
                         src={farmersImg}
-                        alt="Farming background"
+                        alt={t('alt.hero_bg')}
                         className="w-full h-full object-cover opacity-50"
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-green-50 via-green-50/95 to-transparent/10" />
@@ -137,17 +137,7 @@ const Home = () => {
             </section>
 
             {/* App Promotion Section */}
-            <section className="relative py-24 min-h-[600px] flex items-center overflow-hidden">
-                {/* Background Image with Dark Overlay */}
-                <div className="absolute inset-0 z-0">
-                    <img
-                        src={farmersImg}
-                        alt="Farming Background"
-                        className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]" />
-                </div>
-
+            <section className="relative py-24 min-h-[600px] flex items-center overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black">
                 <div className="container mx-auto px-4 md:px-8 relative z-10">
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
                         {/* Text Content */}
@@ -225,7 +215,7 @@ const Home = () => {
                                         <div className="flex-1 rounded-3xl overflow-hidden mb-8 shadow-md">
                                             <img
                                                 src={farmersImg}
-                                                alt="Farmer woman"
+                                                alt={t('alt.app_ui')}
                                                 className="w-full h-full object-cover shadow-sm"
                                             />
                                         </div>

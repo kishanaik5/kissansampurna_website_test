@@ -58,7 +58,7 @@ const Services = () => {
                                 rel="noopener noreferrer"
                                 className="bg-white text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all shadow-xl flex items-center justify-center group"
                             >
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" className="h-10" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt={t('alt.google_play')} className="h-10" />
                                 <span className="ml-4">{t('services.cta.android_btn')}</span>
                             </a>
 
