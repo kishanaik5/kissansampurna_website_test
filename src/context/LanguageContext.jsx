@@ -4,12 +4,8 @@ import { translations } from '../translations/translations';
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-    // Default to English or saved language
-    const [language, setLanguage] = useState(localStorage.getItem('preferredLanguage') || 'English');
-
-    useEffect(() => {
-        localStorage.setItem('preferredLanguage', language);
-    }, [language]);
+    // Default to English (always resets on refresh)
+    const [language, setLanguage] = useState('English');
 
     // Translation function
     const t = (key) => {

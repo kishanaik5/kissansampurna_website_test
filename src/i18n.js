@@ -1,6 +1,5 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
 
 import en from './locales/en.json';
 import kn from './locales/kn.json';
@@ -14,7 +13,6 @@ import or from './locales/or.json';
 import mr from './locales/mr.json';
 
 i18n
-    .use(LanguageDetector)
     .use(initReactI18next)
     .init({
         resources: {
@@ -29,13 +27,10 @@ i18n
             or: { translation: or },
             mr: { translation: mr }
         },
+        lng: 'en', // Force English on initial load
         fallbackLng: 'en',
         interpolation: {
             escapeValue: false
-        },
-        detection: {
-            order: ['localStorage'],
-            caches: ['localStorage']
         }
     });
 
