@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { CheckCircle2, ArrowLeft, Sprout } from 'lucide-react';
+import { CheckCircle2, ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
 import mockData from '../data/mockData.json';
 import { cn } from '../utils/cn';
 import { useTranslation } from 'react-i18next';
@@ -12,9 +12,12 @@ const HorizontalPhoneMockup = ({ title, images, imagePath, extension = '.jpeg' }
     const [isPaused, setIsPaused] = useState(false);
     const intervalRef = useRef(null);
     const resumeTimeoutRef = useRef(null);
+    const touchStartX = useRef(null);
+    const touchEndX = useRef(null);
 
     const AUTO_SLIDE_INTERVAL = 3000; // 3 seconds between slides
     const RESUME_DELAY = 5000; // 5 seconds pause after manual interaction
+    const SWIPE_THRESHOLD = 50; // Minimum swipe distance in pixels
 
     // Start auto-slide interval
     const startAutoSlide = useCallback(() => {
@@ -53,6 +56,47 @@ const HorizontalPhoneMockup = ({ title, images, imagePath, extension = '.jpeg' }
         }, RESUME_DELAY);
     }, [stopAutoSlide, startAutoSlide]);
 
+    // Handle arrow navigation
+    const handlePrevious = useCallback(() => {
+        const newIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
+        handleDotClick(newIndex);
+    }, [currentIndex, images.length, handleDotClick]);
+
+    const handleNext = useCallback(() => {
+        const newIndex = (currentIndex + 1) % images.length;
+        handleDotClick(newIndex);
+    }, [currentIndex, images.length, handleDotClick]);
+
+    // Touch event handlers for swipe
+    const handleTouchStart = useCallback((e) => {
+        touchStartX.current = e.touches[0].clientX;
+    }, []);
+
+    const handleTouchMove = useCallback((e) => {
+        touchEndX.current = e.touches[0].clientX;
+    }, []);
+
+    const handleTouchEnd = useCallback(() => {
+        if (!touchStartX.current || !touchEndX.current) return;
+
+        const distance = touchStartX.current - touchEndX.current;
+        const isSwipe = Math.abs(distance) > SWIPE_THRESHOLD;
+
+        if (isSwipe) {
+            if (distance > 0) {
+                // Swiped left - go to next
+                handleNext();
+            } else {
+                // Swiped right - go to previous
+                handlePrevious();
+            }
+        }
+
+        // Reset
+        touchStartX.current = null;
+        touchEndX.current = null;
+    }, [handleNext, handlePrevious]);
+
     // Initialize auto-slide on mount
     useEffect(() => {
         startAutoSlide();
@@ -86,7 +130,12 @@ const HorizontalPhoneMockup = ({ title, images, imagePath, extension = '.jpeg' }
                             </div>
 
                             {/* Horizontal sliding Image Container */}
-                            <div className="flex-1 relative overflow-hidden">
+                            <div
+                                className="flex-1 relative overflow-hidden"
+                                onTouchStart={handleTouchStart}
+                                onTouchMove={handleTouchMove}
+                                onTouchEnd={handleTouchEnd}
+                            >
                                 <div
                                     className="absolute inset-0 flex transition-transform duration-700 ease-in-out"
                                     style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -102,6 +151,22 @@ const HorizontalPhoneMockup = ({ title, images, imagePath, extension = '.jpeg' }
                                         </div>
                                     ))}
                                 </div>
+
+                                {/* Navigation Arrows - Desktop Only */}
+                                <button
+                                    onClick={handlePrevious}
+                                    className="hidden md:flex absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 hover:bg-white rounded-full items-center justify-center shadow-lg z-10 transition-all hover:scale-110"
+                                    aria-label="Previous image"
+                                >
+                                    <ChevronLeft className="w-5 h-5 text-gray-700" />
+                                </button>
+                                <button
+                                    onClick={handleNext}
+                                    className="hidden md:flex absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 hover:bg-white rounded-full items-center justify-center shadow-lg z-10 transition-all hover:scale-110"
+                                    aria-label="Next image"
+                                >
+                                    <ChevronRight className="w-5 h-5 text-gray-700" />
+                                </button>
 
                                 {/* Clickable Slide Indicators */}
                                 <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 px-2 py-1 bg-black/10 backdrop-blur-sm rounded-full">
@@ -164,7 +229,7 @@ const ServiceDetail = () => {
     }
 
     return (
-        <div className="bg-green-50 min-h-screen py-32 px-4 md:px-8">
+        <div className="bg-green-100 min-h-screen py-32 px-4 md:px-8">
             <div className={cn("mx-auto", (slug === 'crop-disease' || slug === 'smart-farming' || slug === 'crop-advice' || slug === 'mandi-prices') ? "max-w-7xl" : "max-w-4xl")}>
                 <Link to="/services" className="inline-flex items-center text-gray-600 hover:text-primary-green mb-10 transition-colors font-medium">
                     <ArrowLeft className="mr-2 h-5 w-5" /> {t('services.back_to')}

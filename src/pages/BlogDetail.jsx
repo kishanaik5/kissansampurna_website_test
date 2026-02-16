@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, User, Clock } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import mockData from '../data/mockData.json';
 import { useTranslation } from 'react-i18next';
 
@@ -21,7 +21,7 @@ const BlogDetail = () => {
     }
 
     return (
-        <div className="bg-green-50 min-h-screen py-24 md:py-32">
+        <div className="bg-green-100 min-h-screen py-24 md:py-32">
             <div className="container mx-auto px-4 md:px-8 max-w-4xl">
                 {/* Back Link */}
                 <Link to="/blogs" className="inline-flex items-center text-gray-400 hover:text-primary-green mb-8 font-bold transition-colors text-sm">
@@ -30,23 +30,9 @@ const BlogDetail = () => {
 
                 {/* Header Information */}
                 <div className="mb-12">
-                    <h1 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 leading-tight tracking-tight">
+                    <h1 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight tracking-tight">
                         {t(`blogs.articles.id_${blog.id}.title`)}
                     </h1>
-
-                    <div className="flex flex-wrap items-center gap-6 text-sm font-bold text-gray-400">
-                        <span className="flex items-center">
-                            <User className="h-4 w-4 mr-2 text-primary-green" />
-                            {t('blog_detail.by')} {t(`blogs.articles.id_${blog.id}.author`)}
-                        </span>
-                        <span className="flex items-center">
-                            <Calendar className="h-4 w-4 mr-2 text-primary-green" />
-                            {blog.date}
-                        </span>
-                        <span className="bg-green-100 text-primary-green text-[10px] px-3 py-1 rounded-full uppercase tracking-widest font-black">
-                            {t(`blogs.articles.id_${blog.id}.category`) || 'Agri Tech'}
-                        </span>
-                    </div>
                 </div>
 
                 {/* Featured Image */}

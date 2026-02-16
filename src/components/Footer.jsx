@@ -9,7 +9,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-gradient-to-r from-green-100 via-green-50 to-white border-t border-green-200 pt-20 pb-10 px-4 md:px-8 mt-auto">
+        <footer className="bg-gradient-to-r from-green-300 via-green-200 to-green-100 border-t border-green-400 pt-20 pb-10 px-4 md:px-8 mt-auto">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-20 text-center md:text-left">
                 {/* Branding & Social */}
                 <div className="space-y-8 lg:col-span-1">

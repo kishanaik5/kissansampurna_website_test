@@ -14,7 +14,7 @@ const iconMap = {
 const Services = () => {
     const { t } = useTranslation();
     return (
-        <div className="bg-green-50 min-h-screen py-20">
+        <div className="bg-green-100 min-h-screen py-24 md:py-32">
             <div className="container mx-auto px-4 md:px-8">
                 <div className="max-w-3xl mx-auto text-center mb-20">
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">{t('services.title')}</h1>
@@ -27,17 +27,26 @@ const Services = () => {
                     {mockData.services.map((service, idx) => {
                         const Icon = iconMap[service.icon];
                         return (
-                            <div key={idx} className="bg-white p-10 rounded-3xl border border-gray-100 hover:shadow-2xl hover:border-green-100 transition-all group flex flex-col md:flex-row gap-8 items-start">
-                                <div className="w-16 h-16 bg-green-50 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-primary-green transition-colors">
-                                    <Icon className="h-8 w-8 text-primary-green group-hover:text-white" />
+                            <div key={idx} className="bg-white rounded-3xl border border-gray-100 hover:shadow-2xl hover:border-green-100 transition-all group flex flex-col">
+                                <div className="p-10 flex flex-col md:flex-row gap-8 items-start flex-1">
+                                    <div className="w-16 h-16 bg-green-50 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-primary-green transition-colors">
+                                        <Icon className="h-8 w-8 text-primary-green group-hover:text-white" />
+                                    </div>
+                                    <div className="flex-1">
+                                        <h3 className="text-2xl font-bold text-gray-900 mb-4">{t(`services.items.${service.id}.title`, service.title)}</h3>
+                                        <p className="text-gray-600 font-medium leading-relaxed">
+                                            {t(`services.items.${service.id}.description`, service.description)}
+                                        </p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3 className="text-2xl font-bold text-gray-900 mb-4">{t(`services.items.${service.id}.title`, service.title)}</h3>
-                                    <p className="text-gray-600 font-medium mb-6 leading-relaxed">
-                                        {t(`services.items.${service.id}.description`, service.description)}
-                                    </p>
-                                    <Link to={`/services/${service.slug}`} className="text-primary-green font-bold flex items-center group-hover:gap-2 transition-all">
-                                        {t('services.learn_more')} <ArrowRight className="ml-1 h-5 w-5" />
+
+                                {/* View Service Details Container */}
+                                <div className="px-10 pb-10 pt-6">
+                                    <Link
+                                        to={`/services/${service.slug}`}
+                                        className="inline-flex items-center bg-green-50 hover:bg-primary-green text-primary-green hover:text-white font-bold px-6 py-3 rounded-xl border-2 border-primary-green transition-all group/link shadow-sm hover:shadow-md"
+                                    >
+                                        {t('services.learn_more')} <ArrowRight className="ml-2 h-5 w-5 group-hover/link:translate-x-1 transition-transform" />
                                     </Link>
                                 </div>
                             </div>

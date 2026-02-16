@@ -39,7 +39,7 @@ const Products = () => {
     return (
         <div className="bg-white min-h-screen flex flex-col">
             {/* Hero Section */}
-            <section className="py-24 bg-green-50 border-b border-gray-100">
+            <section className="py-24 bg-green-100 border-b border-gray-100">
                 <div className="container mx-auto px-4 md:px-8 text-center max-w-3xl">
                     <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">{t('products.title')}</h1>
                     <p className="text-lg text-gray-600 font-medium">{t('products.subtitle')}</p>

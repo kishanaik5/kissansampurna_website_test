@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ArrowRight, CheckCircle2, Sprout, BarChart3, ShieldCheck, Leaf, Sun, Droplets, Wheat, Play, Apple } from 'lucide-react';
 import farmersImg from '../assets/images/1111.svg';
+import logo from '../assets/images/logo_1.png';
 
 const Home = () => {
     const { t } = useTranslation();
@@ -68,30 +69,30 @@ const Home = () => {
     return (
         <div className="overflow-hidden">
             {/* Hero Section */}
-            <section className="relative min-h-[90vh] flex items-center pt-16 bg-green-50 overflow-hidden">
+            <section className="relative min-h-[90vh] flex items-center pt-16 bg-green-100 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
                         src={farmersImg}
                         alt={t('alt.hero_bg')}
-                        className="w-full h-full object-cover opacity-50"
+                        className="w-full h-full object-cover opacity-70"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-green-50 via-green-50/95 to-transparent/10" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-green-100/80 via-green-100/60 to-transparent/5" />
                 </div>
 
                 <div className="container mx-auto px-4 md:px-8 relative z-20 py-12">
-                    <div className="flex flex-col lg:flex-row items-center gap-16">
-                        {/* Left Content */}
-                        <div className="max-w-2xl animate-fade-in-up lg:w-1/2">
+                    <div className="flex flex-col items-start">
+                        {/* Hero Content */}
+                        <div className="max-w-3xl animate-fade-in-up">
                             <span className="inline-block py-1 px-3 rounded-full bg-green-100 text-primary-green text-xs font-bold uppercase tracking-wider mb-6">
                                 {t('hero.tagline')}
                             </span>
                             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight mb-8">
                                 {t('hero.brand_first')} <span className="text-primary-green">{t('hero.brand_second')}</span>
                             </h1>
-                            <p className="text-xl text-gray-600 mb-6 leading-relaxed max-w-xl">
+                            <p className="text-xl text-gray-600 mb-6 leading-relaxed max-w-2xl">
                                 {t('hero.description_1')}
                             </p>
-                            <p className="text-lg text-gray-500 mb-10 leading-relaxed max-w-xl">
+                            <p className="text-lg text-gray-500 mb-10 leading-relaxed max-w-2xl">
                                 {t('hero.description_2')}
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
@@ -109,25 +110,22 @@ const Home = () => {
                                 </Link>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
 
-                        {/* Right Content - Farming Stages Cards */}
-                        <div className="lg:w-1/2 w-full animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {/* Farming Stages Section */}
+            <section className="bg-green-100 py-4">
+                <div className="container mx-auto px-4 md:px-8">
+                    <div className="bg-white rounded-3xl shadow-2xl p-8 overflow-hidden mx-4 md:mx-8">
+                        <div className="overflow-x-auto scrollbar-hide">
+                            <div className="flex gap-6 min-w-max md:grid md:grid-cols-4 md:min-w-0">
                                 {farmingStages.map((stage, idx) => (
-                                    <div key={idx} className="bg-white/90 backdrop-blur-sm p-6 rounded-[2rem] shadow-xl shadow-gray-200/40 border border-white/50 flex flex-col items-start transition-all hover:translate-y-[-5px] group">
-                                        <div className={`${stage.iconBg} p-3 rounded-xl mb-4 group-hover:scale-110 transition-transform`}>
-                                            <stage.icon className={`w-6 h-6 ${stage.iconColor}`} />
+                                    <div key={idx} className="flex flex-col items-center text-center min-w-[150px] md:min-w-0">
+                                        <div className={`${stage.iconBg} p-4 rounded-2xl mb-3`}>
+                                            <stage.icon className={`w-8 h-8 ${stage.iconColor}`} />
                                         </div>
-                                        <h3 className="text-xl font-black text-gray-900 mb-2">{stage.title}</h3>
-                                        <p className="text-xs text-gray-500 font-medium leading-relaxed mb-4">
-                                            {stage.description}
-                                        </p>
-                                        <div className="w-full h-1 bg-gray-100 rounded-full mt-auto overflow-hidden">
-                                            <div
-                                                className={`h-full ${stage.barColor} rounded-full`}
-                                                style={{ width: stage.progress }}
-                                            />
-                                        </div>
+                                        <h3 className="text-sm font-bold text-gray-900">{stage.title}</h3>
                                     </div>
                                 ))}
                             </div>
@@ -137,7 +135,7 @@ const Home = () => {
             </section>
 
             {/* App Promotion Section */}
-            <section className="relative py-24 min-h-[600px] flex items-center overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black">
+            <section className="relative min-h-[600px] flex items-center overflow-hidden bg-gradient-to-br from-gray-950 via-black to-gray-950">
                 <div className="container mx-auto px-4 md:px-8 relative z-10">
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
                         {/* Text Content */}
@@ -212,11 +210,11 @@ const Home = () => {
                                             </h3>
                                         </div>
 
-                                        <div className="flex-1 rounded-3xl overflow-hidden mb-8 shadow-md">
+                                        <div className="h-48 rounded-3xl overflow-hidden mb-8 shadow-md flex items-center justify-center bg-gray-50 p-6">
                                             <img
-                                                src={farmersImg}
+                                                src={logo}
                                                 alt={t('alt.app_ui')}
-                                                className="w-full h-full object-cover shadow-sm"
+                                                className="w-auto h-full object-contain shadow-sm"
                                             />
                                         </div>
 
