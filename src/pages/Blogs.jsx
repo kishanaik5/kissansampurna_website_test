@@ -4,7 +4,7 @@ import { ArrowRight, Star, User } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { cn } from '../utils/cn';
 import mockData from '../data/mockData.json';
-import farmersImg from '../assets/images/1112.png';
+import farmersImg from '../assets/images/1112.svg';
 
 const Blogs = () => {
     const { t } = useTranslation();
