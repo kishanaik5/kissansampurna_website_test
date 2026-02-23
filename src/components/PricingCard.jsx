@@ -59,7 +59,7 @@ const PricingCard = () => {
                 <div className="absolute -inset-[1px] rounded-[3.1rem] border border-amber-400/10 opacity-30 pointer-events-none shadow-[0_0_40px_rgba(251,191,36,0.05)]" />
 
                 {/* Floating Gold Badge */}
-                <div className="absolute top-8 right-10">
+                <div className="relative mb-8 mx-auto w-fit lg:absolute lg:top-8 lg:right-10 lg:mb-0 lg:mx-0">
                     <div className="bg-gradient-to-r from-amber-400 to-amber-500 text-white text-[10px] font-black uppercase tracking-[0.2em] px-5 py-2 rounded-full shadow-[0_4px_15px_rgba(245,158,11,0.3)] ring-2 ring-white/50 animate-pulse">
                         {t('pricing.trial_badge')}
                     </div>

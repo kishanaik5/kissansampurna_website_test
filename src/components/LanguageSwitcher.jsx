@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Globe, Check } from 'lucide-react';
 import { cn } from '../utils/cn';
 
-const LanguageSwitcher = () => {
+const LanguageSwitcher = ({ isScrolled, isHome, isInHero, mobile, theme }) => {
     const { i18n } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null);
@@ -39,11 +39,17 @@ const LanguageSwitcher = () => {
     return (
         <div className="relative" ref={dropdownRef}>
             <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="p-2 rounded-full hover:bg-gray-100 transition-colors flex items-center justify-center text-gray-700"
+                className={cn(
+                    "flex items-center gap-1 text-lg font-bold transition-all outline-none",
+                    (theme === 'light' && isInHero)
+                        ? "text-white/90 hover:text-white drop-shadow-md"
+                        : "text-gray-700 hover:text-gray-900 drop-shadow-[0_1px_1px_rgba(255,255,255,0.8)]"
+                )}
                 aria-label="Select Language"
+                onClick={() => setIsOpen(!isOpen)}
             >
                 <Globe className="h-5 w-5" />
+                <span>{i18n.language.substring(0, 2).toUpperCase()}</span>
             </button>
 
             {isOpen && (

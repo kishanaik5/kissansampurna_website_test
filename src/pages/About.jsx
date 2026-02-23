@@ -1,7 +1,7 @@
 import React from 'react';
 import { Target, Lightbulb, Leaf, Users, BarChart3 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import farmersImg from '../assets/images/1111.svg';
+import farmersImg from '../assets/images/1112.png';
 
 const About = () => {
     const { t } = useTranslation();
@@ -32,7 +32,7 @@ const About = () => {
     return (
         <div className="bg-white min-h-screen">
             {/* Hero Section */}
-            <section className="relative min-h-[60vh] flex items-center pt-24 pb-12">
+            <section className="relative min-h-[60vh] flex items-center pt-20 pb-12">
                 <div className="container mx-auto px-4 md:px-8">
                     <div className="max-w-4xl mx-auto text-center">
                         <h1 className="text-4xl md:text-7xl font-extrabold text-gray-900 mb-8 leading-tight">

@@ -14,7 +14,7 @@ const iconMap = {
 const Services = () => {
     const { t } = useTranslation();
     return (
-        <div className="bg-green-100 min-h-screen py-24 md:py-32">
+        <div className="bg-green-100 min-h-screen pb-24 md:pb-32 pt-20">
             <div className="container mx-auto px-4 md:px-8">
                 <div className="max-w-3xl mx-auto text-center mb-20">
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">{t('services.title')}</h1>
@@ -65,16 +65,20 @@ const Services = () => {
                                 href="https://play.google.com/store/apps/details?id=com.kissansampurna.app"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-white text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all shadow-xl flex items-center justify-center group"
+                                className="transition-transform hover:scale-105"
                             >
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt={t('alt.google_play')} className="h-10" />
-                                <span className="ml-4">{t('services.cta.android_btn')}</span>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt={t('alt.google_play')} className="h-16" />
                             </a>
 
                             {/* iOS Placeholder */}
-                            <div className="bg-white/10 border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center backdrop-blur-sm cursor-not-allowed">
-                                <span className="opacity-50">{t('services.cta.ios_btn')}</span>
-                                <span className="ml-3 px-2 py-0.5 bg-white/20 rounded text-[10px] uppercase tracking-widest whitespace-nowrap">{t('products.coming_soon')}</span>
+                            {/* iOS Coming Soon */}
+                            <div className="relative group grayscale opacity-70 cursor-not-allowed transform hover:scale-100 transition-none">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" className="h-16" />
+                                <div className="absolute inset-0 flex items-center justify-center bg-black/20 rounded-lg backdrop-blur-[1px]">
+                                    <span className="bg-white/90 text-gray-900 text-[9px] font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider shadow-sm border border-gray-200/50">
+                                        Coming Soon
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>

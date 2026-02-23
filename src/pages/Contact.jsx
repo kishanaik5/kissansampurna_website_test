@@ -61,7 +61,7 @@ const Contact = () => {
 
     return (
         <div className="bg-white min-h-screen">
-            <section className="py-24 bg-green-100 border-b border-gray-100">
+            <section className="pb-24 pt-20 bg-green-100 border-b border-gray-100">
                 <div className="container mx-auto px-4 md:px-8 text-center max-w-3xl">
                     <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">{t('contact.title')}</h1>
                     <p className="text-lg text-gray-600 font-medium">{t('contact.subtitle')}</p>

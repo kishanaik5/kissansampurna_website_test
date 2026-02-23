@@ -7,12 +7,28 @@ import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone } from 'lucide-reac
 const Footer = () => {
     const { t } = useTranslation();
     const currentYear = new Date().getFullYear();
+    const [hasProducts, setHasProducts] = React.useState(false);
+
+    React.useEffect(() => {
+        const checkProducts = async () => {
+            try {
+                const response = await fetch('/api/products');
+                if (response.ok) {
+                    const data = await response.json();
+                    setHasProducts(data.length > 0);
+                }
+            } catch (error) {
+                console.error('Error checking products:', error);
+            }
+        };
+        checkProducts();
+    }, []);
 
     return (
         <footer className="bg-gradient-to-r from-green-300 via-green-200 to-green-100 border-t border-green-400 pt-20 pb-10 px-4 md:px-8 mt-auto">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-20 text-center md:text-left">
                 {/* Branding & Social */}
-                <div className="space-y-8 lg:col-span-1">
+                <div className="space-y-8 md:col-span-2 lg:col-span-1">
                     <div className="flex items-center justify-start space-x-2">
                         <img src={logo} alt={t('alt.logo')} className="h-8 w-8" />
                         <span className="text-xl font-bold tracking-tight text-gray-900">
@@ -46,7 +62,7 @@ const Footer = () => {
                                 href="https://mail.google.com/mail/?view=cm&fs=1&to=support@kissansampurna.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="hover:text-primary-green transition-colors flex items-center"
+                                className="hover:text-primary-green transition-colors inline-block"
                             >
                                 {t('footer.links.feedback')}
                             </a>
@@ -77,7 +93,9 @@ const Footer = () => {
                     <h4 className="font-bold text-gray-900 mb-8 text-lg">{t('footer.sections.products')}</h4>
                     <ul className="space-y-4 text-gray-600 font-medium">
                         <li><Link to="/products" className="hover:text-primary-green transition-colors">{t('footer.links.why_buy')}</Link></li>
-                        <li className="text-gray-400 text-sm">{t('products.coming_soon')}</li>
+                        {!hasProducts && (
+                            <li className="text-gray-400 text-sm">{t('products.coming_soon')}</li>
+                        )}
                     </ul>
                 </div>
             </div>

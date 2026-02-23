@@ -229,14 +229,14 @@ const ServiceDetail = () => {
     }
 
     return (
-        <div className="bg-green-100 min-h-screen py-32 px-4 md:px-8">
+        <div className="bg-green-100 min-h-screen pt-20 pb-20 px-4 md:px-8">
             <div className={cn("mx-auto", (slug === 'crop-disease' || slug === 'smart-farming' || slug === 'crop-advice' || slug === 'mandi-prices') ? "max-w-7xl" : "max-w-4xl")}>
-                <Link to="/services" className="inline-flex items-center text-gray-600 hover:text-primary-green mb-10 transition-colors font-medium">
+                <Link to="/services" className="inline-flex items-center text-gray-600 hover:text-primary-green mb-4 transition-colors font-medium">
                     <ArrowLeft className="mr-2 h-5 w-5" /> {t('services.back_to')}
                 </Link>
 
                 <div className={cn((slug === 'crop-disease' || slug === 'smart-farming' || slug === 'crop-advice' || slug === 'mandi-prices') ? "grid grid-cols-1 lg:grid-cols-2 gap-12" : "block")}>
-                    <div className="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 h-full flex flex-col justify-between">
+                    <div className="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100 h-full flex flex-col justify-between order-2 lg:order-1">
                         <div>
                             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">{t(`services.items.${service.id}.title`)} {t('services.services_suffix')}</h1>
                             <h2 className="text-2xl font-semibold text-gray-800 mb-8">{t(`services.items.${service.id}.subtitle`)}</h2>
@@ -282,42 +282,50 @@ const ServiceDetail = () => {
 
                     {/* Crop Disease - Horizontal sliding animation */}
                     {slug === 'crop-disease' && (
-                        <HorizontalPhoneMockup
-                            title={t('services.items.s2.title')}
-                            images={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]}
-                            imagePath="/media/crop_disease/"
-                            extension=".svg"
-                        />
+                        <div className="order-1 lg:order-2">
+                            <HorizontalPhoneMockup
+                                title={t('services.items.s2.title')}
+                                images={[1, 2, 3, 4, 5, 6, 7, 8]}
+                                imagePath="/media/crop_advice/"
+                                extension=".svg"
+                            />
+                        </div>
                     )}
 
                     {/* Smart Farming - Horizontal sliding animation */}
                     {slug === 'smart-farming' && (
-                        <HorizontalPhoneMockup
-                            title={t('services.items.s4.title')}
-                            images={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
-                            imagePath="/media/farm/"
-                            extension=".svg"
-                        />
+                        <div className="order-1 lg:order-2">
+                            <HorizontalPhoneMockup
+                                title={t('services.items.s4.title')}
+                                images={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
+                                imagePath="/media/farm/"
+                                extension=".svg"
+                            />
+                        </div>
                     )}
 
                     {/* Crop Advice - Horizontal sliding animation */}
                     {slug === 'crop-advice' && (
-                        <HorizontalPhoneMockup
-                            title={t('services.items.s1.title')}
-                            images={[1, 2, 3, 4, 5, 6, 7, 8]}
-                            imagePath="/media/crop_advice/"
-                            extension=".svg"
-                        />
+                        <div className="order-1 lg:order-2">
+                            <HorizontalPhoneMockup
+                                title={t('services.items.s1.title')}
+                                images={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]}
+                                imagePath="/media/crop_disease/"
+                                extension=".svg"
+                            />
+                        </div>
                     )}
 
                     {/* Mandi Prices - Horizontal sliding animation */}
                     {slug === 'mandi-prices' && (
-                        <HorizontalPhoneMockup
-                            title={t('services.items.s5.title')}
-                            images={[1, 2, 3, 4]}
-                            imagePath="/media/mandi/"
-                            extension=".svg"
-                        />
+                        <div className="order-1 lg:order-2">
+                            <HorizontalPhoneMockup
+                                title={t('services.items.s5.title')}
+                                images={[1, 2, 3, 4]}
+                                imagePath="/media/mandi/"
+                                extension=".svg"
+                            />
+                        </div>
                     )}
                 </div>
 
