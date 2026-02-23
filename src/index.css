@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-green: #1F4D1A;
+  --color-accent-brown: #8B4513;
+  --color-bg-light: #F9FBFA;
+}
+
+@layer base {
+  html {
+    font-size: 18px;
+  }
+
+  body {
+    @apply antialiased text-gray-900 bg-[#F9FBFA];
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Custom animations */
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 8s linear infinite;
+  }
+
+  /* Hide scrollbar for horizontal scroll */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari and Opera */
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 25s linear infinite;
+  }
+
+  .animate-scroll:hover {
+    animation-play-state: paused;
+  }
+
+  /* Swiper Linear Transition for Continuous Scroll */
+  .swiper-linear-ease .swiper-wrapper {
+    transition-timing-function: linear !important;
+  }
+}
