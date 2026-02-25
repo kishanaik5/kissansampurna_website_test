@@ -602,5 +602,8 @@
         "value_data": "Data driven agriculture insights icon",
         "google_play": "Get Kissan Sampurna on Google Play Store",
         "app_store": "Get Kissan Sampurna on Apple App Store"
+    },
+    "home": {
+        "recent_blogs": "Recent from our Blog"
     }
 }

@@ -4,18 +4,19 @@ import { ArrowRight, Star, User } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { cn } from '../utils/cn';
 import mockData from '../data/mockData.json';
-import farmersImg from '../assets/images/1112.png';
+const farmersImg = 'https://cdn.gausampurna.co/dev/kissan-sampurna/IMG_20260225_142254.png';
 
 const Blogs = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const [isOlderExpanded, setIsOlderExpanded] = useState(false);
     const [dbBlogs, setDbBlogs] = useState([]);
 
     useEffect(() => {
         const fetchBlogs = async () => {
+            const langCode = i18n.language.split('-')[0];
             try {
-                const response = await fetch('/api/blogs');
+                const response = await fetch(`/api/blogs?lang=${langCode}`);
                 if (response.ok) {
                     const data = await response.json();
                     setDbBlogs(data);
@@ -25,7 +26,7 @@ const Blogs = () => {
             }
         };
         fetchBlogs();
-    }, []);
+    }, [i18n.language]);
 
     // Map DB fields to UI fields
     const displayBlogs = dbBlogs.length > 0 ? dbBlogs.map(b => ({

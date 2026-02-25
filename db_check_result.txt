@@ -1,9 +1,32 @@
 
 --- Blogs in DB ---
-ID: d72d8dc0-fa11-460f-91d8-c02e4d04e1f3 (Type: <class 'uuid.UUID'>) - Title: Soil pH & Crop Yield: Complete Guide for Indian Farmers
-ID: 9dbb72ba-6587-49e0-bea1-8569df207cb8 (Type: <class 'uuid.UUID'>) - Title: Water Management Strategies for Sustainable Farming
-ID: c933b807-3045-4008-a1da-a27c32efb991 (Type: <class 'uuid.UUID'>) - Title: Smart Farming with AI: The Future of Agriculture
-ID: 91145c7e-5b48-455d-a1e1-2e1836d5fef8 (Type: <class 'uuid.UUID'>) - Title: Sustainable Pest Management: A Farmer's Guide
-ID: d82c6b68-c820-4428-a829-399e701dcecb (Type: <class 'uuid.UUID'>) - Title: Sustainable
-ID: 7f1c2c78-54b6-42e7-a9bd-75cc1af954bb (Type: <class 'uuid.UUID'>) - Title: Test Blog 1771469372
-ID: df9db21b-be3d-4423-a460-30b35a90bc6c (Type: <class 'uuid.UUID'>) - Title: Benefits of Organic Agriculture
+ID: d72d8dc0-fa11-460f-91d8-c02e4d04e1f3 - Title: Soil pH & Crop Yield: Complete Guide for Indian Farmers - Lang: en
+ID: 9dbb72ba-6587-49e0-bea1-8569df207cb8 - Title: Water Management Strategies for Sustainable Farming - Lang: en
+ID: c933b807-3045-4008-a1da-a27c32efb991 - Title: Smart Farming with AI: The Future of Agriculture - Lang: en
+ID: 5a36e0bd-3d06-4d43-8db5-66a3432bc425 - Title: ಮಣ್ಣಿನ pH ಮತ್ತು ಬೆಳೆ ಇಳುವರಿ: ಭಾರತೀಯ ರೈತರಿಗೆ ಸಂಪೂರ್ಣ ಮಾರ್ಗದರ್ಶಿ - Lang: kn
+ID: c155888b-9f0d-4db4-8281-a6b95616829b - Title: ಸುಸ್ಥಿರ ಕೃಷಿಗಾಗಿ ನೀರಿನ ನಿರ್ವಹಣಾ ತಂತ್ರಗಳು - Lang: kn
+ID: 83b3b2fd-0990-4c18-a5ce-744a3f765fd7 - Title: AI ಜೊತೆಗೆ ಸ್ಮಾರ್ಟ್ ಫಾರ್ಮಿಂಗ್: ಕೃಷಿಯ ಭವಿಷ್ಯ - Lang: kn
+ID: b81d2d5f-70ac-42fd-89d2-8bfa7f6dc92a - Title: మట్టి pH & పంట దిగుబడి: భారతీయ రైతుల కోసం పూర్తి గైడ్ - Lang: te
+ID: 5e279b8c-0e4e-4a5b-b31e-e1bba7f79c1e - Title: సుస్థిర వ్యవసాయం కోసం నీటి నిర్వహణ వ్యూహాలు - Lang: te
+ID: accfc2cf-55ab-46e6-b1e5-640537ccac49 - Title: AIతో స్మార్ట్ ఫార్మింగ్: వ్యవసాయం భవిష్యత్తు - Lang: te
+ID: ff652537-1c7e-4268-aac4-84e903be6e18 - Title: मिट्टी पीएच और फसल की उपज: भारतीय किसानों के लिए पूर्ण मार्गदर्शिका - Lang: hi
+ID: 68babd9b-ffce-4cdf-bbb7-44a00099b335 - Title: स्थायी खेती के लिए जल प्रबंधन रणनीतियाँ - Lang: hi
+ID: c0458f6f-a8d4-4707-9451-dce83093e124 - Title: एआई के साथ स्मार्ट फार्मिंग: कृषि का भविष्य - Lang: hi
+ID: 6ed1fedb-244c-4037-893c-6f7161b52689 - Title: മണ്ണ് pH ഉം വിള വിളവും: ഇന്ത്യൻ കർഷകർക്കുള്ള സമ്പൂർണ്ണ ഗൈഡ് - Lang: ml
+ID: cbbecedc-f4d4-41fe-9bc9-6920cb3500d3 - Title: സുസ്ഥിര കൃഷിക്ക് ജല മാനേജ്‌മെന്റ് തന്ത്രങ്ങൾ - Lang: ml
+ID: 95f24309-99c1-4bf7-9ee8-73a16c396986 - Title: AI-ക്കൊപ്പം സ്മാർട്ട് ഫാമിംഗ്: കൃഷിയുടെ ഭാവി - Lang: ml
+ID: 3311bd0c-0a3f-4e1b-be88-a9a8334ae22e - Title: மண் pH மற்றும் பயிர் விளைச்சல்: இந்திய விவசாயிகளுக்கான முழுமையான வழிகாட்டி - Lang: ta
+ID: e1361af5-2070-4c5a-b580-a62ea12a05d1 - Title: நிலையான விவசாயத்திற்கான நீர் மேலாண்மை உத்திகள் - Lang: ta
+ID: b94aa0a0-bb69-4851-98ab-c11fb6130046 - Title: AI உடன் ஸ்மார்ட் விவசாயம்: விவசாயத்தின் எதிர்காலம் - Lang: ta
+ID: e9e4cd4a-616d-4857-8e71-0ec10b302439 - Title: मातीचा पीएच आणि पिकाचे उत्पादन: भारतीय शेतकऱ्यांसाठी संपूर्ण मार्गदर्शक - Lang: mr
+ID: 29bfef83-b1b2-4187-b08e-4e7257f07288 - Title: शाश्वत शेतीसाठी जल व्यवस्थापन धोरणे - Lang: mr
+ID: 4a5dd8b3-a4ce-4593-b5d8-c8b04fee0e00 - Title: AI सह स्मार्ट फार्मिंग: शेतीचे भविष्य - Lang: mr
+ID: 37de3ed6-faff-4d7f-a70a-57226e38200b - Title: જમીન pH અને પાકની ઉપજ: ભારતીય ખેડૂતો માટે સંપૂર્ણ માર્ગદર્શિકા - Lang: gu
+ID: a87db984-48e5-4ef1-8a3e-22d272c84021 - Title: ટકાઉ ખેતી માટે જળ વ્યવસ્થાપન વ્યૂહરચના - Lang: gu
+ID: 6e0bfffd-5034-4fa7-888c-f388cbf5ca48 - Title: AI સાથે સ્માર્ટ ફાર્મિંગ: ખેતીનું ભવિષ્ય - Lang: gu
+ID: bd01310e-3021-4da7-aef8-e5c83dc28b01 - Title: মাটির pH এবং ফসলের ফলন: ভারতীয় কৃষকদের জন্য সম্পূর্ণ গাইড - Lang: bn
+ID: 1270e879-c69b-4378-ad15-9d6197b683c3 - Title: টেকসই চাষের জন্য জল ব্যবস্থাপনা কৌশল - Lang: bn
+ID: 288ede1c-e9c3-4aa9-9a70-a12084c84a91 - Title: AI এর সাথে স্মার্ট ফার্মিং: কৃষির ভবিষ্যত - Lang: bn
+ID: 1e35b215-87aa-434f-ab55-9b454cccc280 - Title: ମାଟିର pH ଏବଂ ଫସଲ ଅମଳ: ଭାରତୟ କୃଷକଙ୍କ ପାଇଁ ସମ୍ପୂର୍ଣ୍ଣ ଗାଇଡ୍ - Lang: or
+ID: 76514357-56fc-4c0c-9015-22ca013cbd9d - Title: ସ୍ଥାୟୀ ଚାଷ ପାଇଁ ଜଳ ପରିଚାଳନା ରଣନୀତି - Lang: or
+ID: 290dad56-5c49-4af3-aada-3c688b5eda67 - Title: AI ସହିତ ସ୍ମାର୍ଟ ଫାର୍ମିଂ: କୃଷିର ଭବିଷ୍ୟତ - Lang: or

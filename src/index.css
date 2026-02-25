@@ -66,4 +66,27 @@
   .swiper-linear-ease .swiper-wrapper {
     transition-timing-function: linear !important;
   }
+
+  /* Vertical scroll for long images in mockups */
+  @keyframes vertical-scroll {
+
+    0%,
+    10% {
+      transform: translateY(0);
+    }
+
+    45%,
+    55% {
+      transform: translateY(var(--scroll-y, 0));
+    }
+
+    90%,
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .animate-vertical-scroll {
+    animation: vertical-scroll var(--scroll-duration, 10s) ease-in-out infinite;
+  }
 }

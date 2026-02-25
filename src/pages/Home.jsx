@@ -2,11 +2,12 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ArrowRight, CheckCircle2, Sprout, BarChart3, ShieldCheck, Leaf, Sun, Droplets, Wheat, Play, Apple } from 'lucide-react';
-import farmersImg from '../assets/images/1111.svg';
-import logo from '../assets/images/logo_1.png';
 import { cn } from '../utils/cn';
 import FarmingCarousel from '../components/FarmingCarousel';
 import mockData from '../data/mockData.json';
+
+const farmersImg = 'https://cdn.gausampurna.co/dev/kissan-sampurna/IMG_20260225_142254.png';
+const logo = 'https://cdn.gausampurna.co/dev/kissan-sampurna/logo_1.png';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -20,18 +21,60 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation, Mousewheel } from 'swiper/modules';
 
 const Home = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const location = useLocation();
+
+    // Phone registration logic
+    const [phoneNumber, setPhoneNumber] = useState('');
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submissionStatus, setSubmissionStatus] = useState(null); // 'success' | 'error' | null
+
+    const handlePhoneChange = (e) => {
+        const val = e.target.value.replace(/\D/g, ''); // Numeric only
+        if (val.length <= 10) {
+            setPhoneNumber(val);
+        }
+    };
+
+    const handleSubmitPhone = async () => {
+        if (phoneNumber.length !== 10) return;
+
+        setIsSubmitting(true);
+        setSubmissionStatus(null);
+
+        try {
+            const response = await fetch('/api/phone-register', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ phone_number: phoneNumber })
+            });
+
+            if (response.ok) {
+                setSubmissionStatus('success');
+                setPhoneNumber('');
+            } else {
+                setSubmissionStatus('error');
+            }
+        } catch (error) {
+            setSubmissionStatus('error');
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
 
     // Blog Data Logic
     const [dbBlogs, setDbBlogs] = useState([]);
 
     useEffect(() => {
         const fetchBlogs = async () => {
+            const langCode = i18n.language.split('-')[0];
+            console.log('Fetching blogs for language:', langCode);
+            setDbBlogs([]); // Clear old blogs before fetching new ones
             try {
-                const response = await fetch('/api/blogs');
+                const response = await fetch(`/api/blogs?lang=${langCode}`);
                 if (response.ok) {
                     const data = await response.json();
+                    console.log(`Fetched ${data.length} blogs for ${langCode}`);
                     setDbBlogs(data);
                 } else {
                     console.error('Failed to fetch blogs');
@@ -41,15 +84,24 @@ const Home = () => {
             }
         };
         fetchBlogs();
-    }, []);
+    }, [i18n.language]);
 
-    const displayBlogs = dbBlogs.length > 0 ? dbBlogs.map(b => ({
-        id: b.id,
-        title: b.blog_title,
-        image: b.blog_img || farmersImg,
-        date: b.created_at,
-        slug: b.id
-    })) : mockData.blogs;
+    const displayBlogs = useMemo(() => {
+        if (dbBlogs.length > 0) {
+            return dbBlogs.map(b => ({
+                id: b.id,
+                title: b.blog_title,
+                image: b.blog_img || farmersImg,
+                date: b.created_at,
+                slug: b.id
+            }));
+        }
+        // Fallback to mock data with translations
+        return mockData.blogs.map(b => ({
+            ...b,
+            title: t(`blogs.articles.id_${b.id}.title`, b.title)
+        }));
+    }, [dbBlogs, t]);
 
     const features = [
         {
@@ -82,7 +134,7 @@ const Home = () => {
                     <img
                         src={farmersImg}
                         alt={t('alt.hero_bg')}
-                        className="w-full h-full object-cover object-right md:object-center opacity-70"
+                        className="w-full h-full object-cover object-right md:object-center opacity-80"
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-green-100/80 via-green-100/60 to-transparent/5" />
 
@@ -137,9 +189,9 @@ const Home = () => {
 
                         {/* Text Content */}
                         <div className="lg:max-w-4xl text-white">
-                            <h2 className="text-6xl md:text-[7rem] lg:text-[8rem] font-extrabold mb-8 leading-[0.9] tracking-tighter">
+                            <h2 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-8 leading-[1.1] tracking-tighter">
                                 {t('promotion.title_part1')} <br />
-                                <span className="text-green-600 text-5xl md:text-7xl lg:text-8xl">{t('promotion.title_part2')}</span>
+                                <span className="text-green-600 text-3xl md:text-5xl lg:text-6xl">{t('promotion.title_part2')}</span>
                             </h2>
 
                             <p className="text-lg md:text-2xl text-gray-200 mb-10 leading-relaxed font-bold">
@@ -200,14 +252,40 @@ const Home = () => {
 
                                         <div className="space-y-6">
                                             <div className="space-y-2">
-                                                <label className="text-[12px] font-black text-gray-900 tracking-tight pl-1">{t('phone_mockup.label')}</label>
-                                                <div className="w-full h-16 bg-[#F8FAFC] border border-gray-100 rounded-2xl px-5 flex items-center text-gray-400 font-medium">
-                                                    {t('phone_mockup.placeholder')}
-                                                </div>
+                                                <label className="text-[14px] font-black text-gray-900 tracking-tight pl-1">{t('phone_mockup.label', 'Phone number')}</label>
+                                                <input
+                                                    type="text"
+                                                    value={phoneNumber}
+                                                    onChange={handlePhoneChange}
+                                                    placeholder={t('phone_mockup.placeholder', 'Enter your Phone number')}
+                                                    className="w-full h-16 bg-[#F8FAFC] border border-gray-100 rounded-2xl px-5 flex items-center text-gray-900 text-[14px] font-bold focus:outline-none focus:ring-2 focus:ring-primary-green/20 placeholder:text-gray-400"
+                                                />
                                             </div>
-                                            <button className="w-full h-16 bg-[#1F4D1A] text-white text-lg font-black rounded-2xl shadow-xl shadow-green-900/10 active:scale-95 transition-transform">
-                                                {t('phone_mockup.btn_next')}
+                                            <button
+                                                onClick={handleSubmitPhone}
+                                                disabled={isSubmitting || phoneNumber.length !== 10}
+                                                className={cn(
+                                                    "w-full h-16 text-white text-lg font-black rounded-2xl shadow-xl active:scale-95 transition-all flex items-center justify-center",
+                                                    isSubmitting || phoneNumber.length !== 10
+                                                        ? "bg-gray-400 cursor-not-allowed"
+                                                        : "bg-[#1F4D1A] shadow-green-900/10 hover:bg-green-800"
+                                                )}
+                                            >
+                                                {isSubmitting ? (
+                                                    <div className="h-6 w-6 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                                                ) : t('phone_mockup.btn_next', 'Next')}
                                             </button>
+
+                                            {submissionStatus === 'success' && (
+                                                <p className="text-[10px] text-green-600 font-bold text-center animate-fade-in">
+                                                    ✓ {t('phone_mockup.success', 'Registered successfully!')}
+                                                </p>
+                                            )}
+                                            {submissionStatus === 'error' && (
+                                                <p className="text-[10px] text-red-600 font-bold text-center animate-fade-in">
+                                                    ⚠ {t('phone_mockup.error', 'Failed. Please try again.')}
+                                                </p>
+                                            )}
                                         </div>
                                     </div>
                                 </div>
@@ -223,15 +301,14 @@ const Home = () => {
                                 >
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt={t('alt.google_play')} className="h-14" />
                                 </a>
-                                {/* iOS Coming Soon */}
-                                <div className="relative group grayscale opacity-70 cursor-not-allowed transform hover:scale-100 transition-none">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" className="h-14" />
-                                    <div className="absolute inset-0 flex items-center justify-center bg-black/20 rounded-lg backdrop-blur-[1px]">
-                                        <span className="bg-white/90 text-gray-900 text-[9px] font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider shadow-sm border border-gray-200/50">
-                                            Coming Soon
-                                        </span>
-                                    </div>
-                                </div>
+                                <a
+                                    href="https://apps.apple.com/in/app/kissansampurna/id6756928848"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="transition-transform hover:scale-105"
+                                >
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt={t('alt.app_store')} className="h-14" />
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -300,7 +377,7 @@ const Home = () => {
                                             <img
                                                 src={blog.image || farmersImg}
                                                 onError={(e) => { e.target.onerror = null; e.target.src = farmersImg; }}
-                                                alt={t(`blogs.articles.id_${blog.id}.title`, blog.title)}
+                                                alt={blog.title}
                                                 className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                                             />
                                         </div>
@@ -308,7 +385,7 @@ const Home = () => {
                                         {/* Overlay with title on interaction/hover */}
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                                             <h3 className="text-white font-bold text-sm leading-tight translate-y-0 lg:translate-y-4 lg:group-hover:translate-y-0 transition-transform duration-300 line-clamp-3">
-                                                {t(`blogs.articles.id_${blog.id}.title`, blog.title)}
+                                                {blog.title}
                                             </h3>
                                         </div>
                                     </Link>

@@ -6,10 +6,10 @@ def check_blogs():
     with open("db_check_result.txt", "w", encoding="utf-8") as f:
         try:
             # Use raw SQL to see what's actually in the DB, bypassing model validation
-            result = db.execute(text("SELECT id, blog_title FROM blogs_ks"))
+            result = db.execute(text("SELECT id, blog_title, language FROM blogs_ks"))
             f.write("\n--- Blogs in DB ---\n")
             for row in result:
-                f.write(f"ID: {row[0]} (Type: {type(row[0])}) - Title: {row[1]}\n")
+                f.write(f"ID: {row[0]} - Title: {row[1]} - Lang: {row[2]}\n")
         except Exception as e:
             f.write(f"Error querying DB: {e}\n")
         finally:

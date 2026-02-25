@@ -1,7 +1,7 @@
 import React from 'react';
 import { Target, Lightbulb, Leaf, Users, BarChart3 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import farmersImg from '../assets/images/1112.png';
+const farmersImg = 'https://cdn.gausampurna.co/dev/kissan-sampurna/IMG_20260225_142254.png';
 
 const About = () => {
     const { t } = useTranslation();

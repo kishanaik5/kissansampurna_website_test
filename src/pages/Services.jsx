@@ -70,16 +70,15 @@ const Services = () => {
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt={t('alt.google_play')} className="h-16" />
                             </a>
 
-                            {/* iOS Placeholder */}
-                            {/* iOS Coming Soon */}
-                            <div className="relative group grayscale opacity-70 cursor-not-allowed transform hover:scale-100 transition-none">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" className="h-16" />
-                                <div className="absolute inset-0 flex items-center justify-center bg-black/20 rounded-lg backdrop-blur-[1px]">
-                                    <span className="bg-white/90 text-gray-900 text-[9px] font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider shadow-sm border border-gray-200/50">
-                                        Coming Soon
-                                    </span>
-                                </div>
-                            </div>
+                            {/* iOS Link */}
+                            <a
+                                href="https://apps.apple.com/in/app/kissansampurna/id6756928848"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="transition-transform hover:scale-105"
+                            >
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt={t('alt.app_store')} className="h-16" />
+                            </a>
                         </div>
                     </div>
                     <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl" />

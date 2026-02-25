@@ -4,7 +4,7 @@ import { Menu, X, LogOut } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import { cn } from '../utils/cn';
-import logo from '../assets/images/logo_1.png';
+const logo = 'https://cdn.gausampurna.co/dev/kissan-sampurna/logo_1.png';
 import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar = () => {

@@ -611,5 +611,8 @@
         "value_data": "ડેટા-સંચાલિત ખેતી આંતર-દૃષ્ટિ આઇકૉn",
         "google_play": "Google Play Store પર Kissan Sampurna મેળવો",
         "app_store": "Apple App Store પર Kissan Sampurna મેળવો"
+    },
+    "home": {
+        "recent_blogs": "અમારા બ્લોગ પરથી તાજેતરના લેખ"
     }
 }
